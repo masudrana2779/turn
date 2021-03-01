@@ -1,0 +1,69 @@
+
+@charset "utf-8";
+//-----Color class style
+
+body {
+  font-family: $Avenir;
+  font-size  : 16px;
+  line-height: 20px;
+}
+
+
+
+::selection {}
+
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+
+.tcolor {
+  color: $tcolor;
+}
+
+a {
+  text-decoration: none;
+  color          : $tcolor;
+  transition     : all 0.3s;
+  display        : inline-block;
+}
+
+.underline {
+  text-decoration: underline !important;
+}
+
+.hover-color:hover {
+  color: $tcolor;
+}
+
+a:hover {
+  color          : $tcolor;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none !important;
+}
+
+a.link {
+  color: $tcolor;
+}
+
+a.link:hover {
+  color: $tcolor !important;
+}
+
+ul {
+  margin    : 0;
+  padding   : 0;
+  list-style: none;
+}
+
+/* ======================================          Global style                 ==================================== */
