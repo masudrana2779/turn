@@ -100,6 +100,10 @@
     background: url("../../assets/img/banner_img.jpg") no-repeat scroll top left / cover;
   }
 
+  &.banner_2 {
+    background: url("../../assets/img/5C2C23FE.jpg") no-repeat scroll top left / cover;
+  }
+
   .bannerInner {
     position: relative;
     z-index: 1;
@@ -134,6 +138,7 @@
           font-weight: 800;
           line-height: 90px;
           margin-bottom: 20px;
+          text-transform: uppercase;
 
           span {
             display: block;
@@ -149,6 +154,16 @@
 
           .l3 {
             font-size: 118px;
+          }
+          .l4 {
+            -webkit-text-stroke: 1px #6e6e6e;
+            color: transparent;
+            font-size: 114px;
+          }
+          .l5 {
+            color: $darkLight;
+            font-weight: 800;
+            font-size: 100px;
           }
         }
 
@@ -255,7 +270,7 @@
   transform: translate(-50%, -50%);
 }
 
-#circular-text {
+.circular-text {
   position: relative;
   color: #fff;
   border-radius: 100%;
@@ -267,7 +282,7 @@
   height: 80px;
 }
 
-#circular-text span {
+.circular-text span {
   position: absolute;
   transform-origin: top left;
   font-size: 8px;

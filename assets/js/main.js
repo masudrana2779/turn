@@ -12,7 +12,7 @@
             const radius = 40;
             const diameter = radius * 2;
 
-            const circle = document.querySelector("#circular-text");
+            const circle = document.querySelector(".circular-text");
             circle.style.width = `${diameter}px`;
             circle.style.height = `${diameter}px`;
 

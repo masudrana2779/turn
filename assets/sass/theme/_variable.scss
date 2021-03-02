@@ -19,7 +19,7 @@
 //-----Color
 $tcolor     : #6f531d;
 $dark       : #23374D;
-$darkLight  : #7C7E8D;
+$darkLight  : #6e6e6e;
 $bgDark     : #305392;
 $bgDarkDeep : #072a6a;
 $lightDark  : #6e6e6e;
@@ -49,6 +49,10 @@ $f115 : 115px;
 //---- font family ----
 $Avenir : 'Avenir';
 
+//-------------------  class
 
+.darkLight {
+  color: $darkLight !important;
+}
 
 
