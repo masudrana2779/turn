@@ -77,7 +77,7 @@
         .nav-item {
           .nav-link {
             font-size: $f12;
-            font-weight: 500;
+            font-weight: 700;
             color: $lightDark;
             text-transform: uppercase;
             margin: 1px;
@@ -96,12 +96,50 @@
 }
 
 .bannerWrap {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+
+  .video_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    #myVideo {
+      min-width: 100%;
+      min-height: 100%;
+      height: auto;
+      width: auto;
+      max-width: 100%;
+      margin: 0;
+      line-height: 1;
+      border: none;
+    }
+  }
+
   &.banner_1 {
     background: url("../../assets/img/banner_img.jpg") no-repeat scroll top left / cover;
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      top: 0;
+      left: 0;
+    }
   }
 
   &.banner_2 {
     background: url("../../assets/img/5C2C23FE.jpg") no-repeat scroll top left / cover;
+  }
+
+  &.banner_3 {
+    background: url("../../assets/img/5C2C2402.jpg") no-repeat scroll top left / cover;
   }
 
   .bannerInner {
@@ -155,11 +193,20 @@
           .l3 {
             font-size: 118px;
           }
+
           .l4 {
             -webkit-text-stroke: 1px #6e6e6e;
             color: transparent;
             font-size: 114px;
           }
+
+          .l6 {
+            -webkit-text-stroke: 1px #6e6e6e;
+            color: transparent;
+            font-size: 44px;
+            line-height: 44px;
+          }
+
           .l5 {
             color: $darkLight;
             font-weight: 800;
@@ -218,6 +265,16 @@
     text-transform: uppercase;
     font-weight: 700;
 
+    &.darkBtn {
+      border: 1px solid $darkLight;
+      color: $darkLight;
+
+      &:hover {
+        background: $darkLight;
+        color: $white;
+      }
+    }
+
     &:last-child {
       margin-right: 0;
     }
@@ -230,6 +287,17 @@
     &.btnSolid {
       color: $tcolor;
       background: $white;
+
+      &.darkBtn {
+        border: 1px solid $white;
+        color: $darkLight;
+
+        &:hover {
+          border: 1px solid $darkLight;
+          background: $darkLight;
+          color: $white;
+        }
+      }
 
       &:hover {
         color: $white;
@@ -293,5 +361,69 @@
 @keyframes round {
   0% {
     transform: rotate(-360deg);
+  }
+}
+
+.portfolioAccordion {
+  .portfolioAccordionItem {
+    padding: 50px 0;
+
+    .accordion-header {
+      .accordion-button {
+        padding: 0;
+        border: none;
+        background: transparent;
+        color: $lightDark;
+
+        &:after {
+          display: none;
+        }
+
+        .btnItem {
+          position: relative;
+          width: max-content;
+
+          .btnImg {
+            position: absolute;
+            top: 15px;
+            right: -30px;
+            transform: translateY(-50%);
+
+            img {
+
+            }
+          }
+
+          p {
+            color: $lightDark;
+            font-size: $f16;
+            text-transform: uppercase;
+          }
+
+          h5 {
+            color: $lightDark;
+            font-size: $f20;
+            text-transform: uppercase;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    .accordion-collapse {
+      border: none;
+
+      .accordion-body {
+        padding: 30px;
+
+        .itemList {
+          li {
+            font-size: $f16;
+            font-weight: 500;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
   }
 }

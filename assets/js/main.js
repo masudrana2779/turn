@@ -5,36 +5,35 @@
     $(document).ready(function () {
         function roundTextContent() {
 
-            const degreeToRadian = (angle) => {
+            let degreeToRadian = (angle) => {
                 return angle * (Math.PI / 180);
             };
 
-            const radius = 40;
-            const diameter = radius * 2;
-
-            const circle = document.querySelector(".circular-text");
+            let radius = 40;
+            let diameter = radius * 2;
+            let circle = document.querySelector(".circular-text");
             circle.style.width = `${diameter}px`;
             circle.style.height = `${diameter}px`;
 
-            const text = circle.innerText;
-            const characters = text.split("");
+            let text = circle.innerText;
+            let characters = text.split("");
             circle.innerText = null;
 
-            const startAngle = -90;
-            const endAngle = 270;
-            const angleRange = endAngle - startAngle;
+            let startAngle = -90;
+            let endAngle = 270;
+            let angleRange = endAngle - startAngle;
 
-            const deltaAngle = angleRange / characters.length;
+            let deltaAngle = angleRange / characters.length;
             let currentAngle = startAngle;
 
             characters.forEach((char, index) => {
-                const charElement = document.createElement("span");
+                let charElement = document.createElement("span");
                 charElement.innerText = char;
-                const xPos = radius * (1 + Math.cos(degreeToRadian(currentAngle)));
-                const yPos = radius * (1 + Math.sin(degreeToRadian(currentAngle)));
+                let xPos = radius * (1 + Math.cos(degreeToRadian(currentAngle)));
+                let yPos = radius * (1 + Math.sin(degreeToRadian(currentAngle)));
 
-                const transform = `translate(${xPos}px, ${yPos}px)`;
-                const rotate = `rotate(${index * deltaAngle}deg)`;
+                let transform = `translate(${xPos}px, ${yPos}px)`;
+                let rotate = `rotate(${index * deltaAngle}deg)`;
                 charElement.style.transform = `${transform} ${rotate}`;
 
                 currentAngle += deltaAngle;
