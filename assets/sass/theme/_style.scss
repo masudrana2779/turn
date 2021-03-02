@@ -54,6 +54,7 @@
   top: 0px;
   left: 0;
   width: 100%;
+  padding: 10px 0;
 
   .navbar {
     padding: 0;
@@ -61,7 +62,7 @@
     .logo {
       a {
         img {
-          max-width: 105px;
+          max-width: 60px;
           width: 100%;
         }
       }
@@ -75,8 +76,17 @@
       .navbar-nav {
         .nav-item {
           .nav-link {
-            &.active {
+            font-size: $f12;
+            font-weight: 500;
+            color: $lightDark;
+            text-transform: uppercase;
+            margin: 1px;
+            padding: 10px 15px;
 
+            &.active,
+            &:hover {
+              background: $tcolor;
+              color: $white;
             }
           }
         }
@@ -85,21 +95,39 @@
   }
 }
 
-
 .bannerWrap {
   &.banner_1 {
     background: url("../../assets/img/banner_img.jpg") no-repeat scroll top left / cover;
   }
 
   .bannerInner {
-    height: 100vh;
-    display: flex;
-    align-items: center;
+    position: relative;
+    z-index: 1;
+
+    .tagTop {
+      position: absolute;
+      top: 50px;
+      left: 0;
+
+      p {
+        color: $white;
+        display: flex;
+        align-items: center;
+
+        span {
+          img {
+            margin-top: 6px;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
 
     .bannerContent {
       .contentInner {
         position: relative;
         z-index: 1;
+
         .bannerTitle {
           font-size: $f115;
           color: $white;
@@ -133,7 +161,7 @@
           z-index: -1;
 
           img {
-            max-width: 300px;
+            max-width: 280px;
             width: 100%;
           }
         }
@@ -142,6 +170,7 @@
           max-width: 310px;
           width: 100%;
           text-align: right;
+
           h5 {
             color: $white;
             margin-bottom: 10px;
@@ -192,5 +221,62 @@
         background: transparent;
       }
     }
+  }
+}
+
+.roundShapeImgWrap {
+  max-width: 400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: 100px;
+}
+
+.circleText {
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+
+.circleTextWrap {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.circleTextWrap:before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  background: red;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#circular-text {
+  position: relative;
+  color: #fff;
+  border-radius: 100%;
+}
+
+.textInner {
+  animation: round 30s infinite linear;
+  width: 80px;
+  height: 80px;
+}
+
+#circular-text span {
+  position: absolute;
+  transform-origin: top left;
+  font-size: 8px;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+@keyframes round {
+  0% {
+    transform: rotate(-360deg);
   }
 }
