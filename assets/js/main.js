@@ -3,7 +3,7 @@
 
 
     $(document).ready(function () {
-        function roundTextContent() {
+        function roundTextContent(selector) {
 
             let degreeToRadian = (angle) => {
                 return angle * (Math.PI / 180);
@@ -11,7 +11,7 @@
 
             let radius = 40;
             let diameter = radius * 2;
-            let circle = document.querySelector(".circular-text");
+            let circle = document.querySelector(selector);
             circle.style.width = `${diameter}px`;
             circle.style.height = `${diameter}px`;
 
@@ -41,7 +41,9 @@
             });
         }
 
-        roundTextContent();
+        roundTextContent('.circular-text1');
+        roundTextContent('.circular-text2');
+        roundTextContent('.circular-text3');
 
     });
 }(jQuery);
