@@ -318,6 +318,10 @@
   position: absolute;
   top: 50px;
   right: 0;
+  transition: all 0.5s;
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 
 .circleTextWrap {
@@ -423,6 +427,26 @@
             margin-bottom: 10px;
           }
         }
+      }
+    }
+  }
+}
+
+.clientLogoWrap {
+  .logoItem {
+    width: 140px;
+    height: 140px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    padding: 10px;
+    cursor: pointer;
+
+    .logoInner {
+      img {
+
       }
     }
   }

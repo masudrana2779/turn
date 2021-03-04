@@ -35,7 +35,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #6f531d;
+  color: #6e6e6e;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
@@ -286,7 +286,14 @@ ul {
 .circleText {
   position: absolute;
   top: 50px;
-  right: 0; }
+  right: 0;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+  .circleText:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2); }
 
 .circleTextWrap {
   position: relative;
@@ -374,3 +381,20 @@ ul {
         font-size: 16px;
         font-weight: 500;
         margin-bottom: 10px; }
+
+.clientLogoWrap .logoItem {
+  width: 140px;
+  height: 140px;
+  border: 1px solid #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  padding: 10px;
+  cursor: pointer; }
