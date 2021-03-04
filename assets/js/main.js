@@ -45,5 +45,7 @@
         roundTextContent('.circular-text2');
         roundTextContent('.circular-text3');
 
+        
+
     });
 }(jQuery);
