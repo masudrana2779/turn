@@ -50,11 +50,12 @@
 }
 
 .header {
-  //position: sticky;
+  position: absolute;
   top: 0px;
   left: 0;
   width: 100%;
   padding: 10px 0;
+  z-index: 1100;
 
   .navbar {
     padding: 0;
@@ -95,44 +96,55 @@
   }
 }
 
+.video_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+  padding-right: 17px;
+  &:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+  }
+
+  #myVideo {
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    margin: 0;
+    line-height: 1;
+    border: none;
+  }
+}
 .bannerWrap {
   position: relative;
   z-index: 1;
   height: 100vh;
 
-  .video_bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
 
-    #myVideo {
-      min-width: 100%;
-      min-height: 100%;
-      height: auto;
-      width: auto;
-      max-width: 100%;
-      margin: 0;
-      line-height: 1;
-      border: none;
-    }
-  }
-
-  &.banner_1 {
-    background: url("../../assets/img/banner_img.jpg") no-repeat scroll top left / cover;
-
-    &:before {
-      position: absolute;
-      content: "";
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.6);
-      top: 0;
-      left: 0;
-    }
-  }
+  //&.banner_1 {
+  //  background: url("../../assets/img/banner_img.jpg") no-repeat scroll top left / cover;
+  //
+  //  &:before {
+  //    position: absolute;
+  //    content: "";
+  //    width: 100%;
+  //    height: 100%;
+  //    background: rgba(0, 0, 0, 0.6);
+  //    top: 0;
+  //    left: 0;
+  //  }
+  //}
 
   &.banner_2 {
     background: url("../../assets/img/5C2C23FE.jpg") no-repeat scroll top left / cover;
@@ -148,13 +160,15 @@
 
     .tagTop {
       position: absolute;
-      top: 50px;
+      top: 70px;
       left: 0;
+      overflow: hidden;
 
       p {
         color: $white;
         display: flex;
         align-items: center;
+        width: 200px;
 
         span {
           img {
@@ -180,6 +194,7 @@
 
           span {
             display: block;
+            overflow: hidden;
           }
 
           .l1 {
@@ -228,21 +243,26 @@
           }
         }
 
-        .bannerRightSingleText {
-          max-width: 310px;
-          width: 100%;
-          text-align: right;
+        .contentInnerInner {
+          position: relative;
+          .bannerRightSingleText {
+            max-width: 310px;
+            width: 100%;
+            text-align: right;
+            margin-bottom: 20px;
+            //position: absolute;
 
-          h5 {
-            color: $white;
-            margin-bottom: 10px;
-            font-size: $f16;
-            text-transform: uppercase;
-          }
+            h5 {
+              color: $white;
+              margin-bottom: 10px;
+              font-size: $f16;
+              text-transform: uppercase;
+            }
 
-          p {
-            color: $white;
-            font-size: $f13;
+            p {
+              color: $white;
+              font-size: $f13;
+            }
           }
         }
       }
@@ -316,9 +336,10 @@
 
 .circleText {
   position: absolute;
-  top: 50px;
+  top: 60px;
   right: 0;
   transition: all 0.5s;
+
   &:hover {
     transform: scale(1.2);
   }
@@ -449,5 +470,57 @@
 
       }
     }
+  }
+}
+
+
+.scrollDownAnimationWrap {
+  background: rgba(0, 0, 0, .30);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  width: 100%;
+  height: 100%;
+}
+
+.scrollDownAnimation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.scrollDownAnimation span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+.scrollDownAnimation span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.scrollDownAnimation span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
   }
 }

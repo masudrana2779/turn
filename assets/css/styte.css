@@ -111,10 +111,12 @@ ul {
         justify-content: center; }
 
 .header {
+  position: absolute;
   top: 0px;
   left: 0;
   width: 100%;
-  padding: 10px 0; }
+  padding: 10px 0;
+  z-index: 1100; }
   .header .navbar {
     padding: 0; }
     .header .navbar .logo a img {
@@ -131,36 +133,37 @@ ul {
         background: #6f531d;
         color: #fff; }
 
+.video_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+  padding-right: 17px; }
+  .video_bg:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0; }
+  .video_bg #myVideo {
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    margin: 0;
+    line-height: 1;
+    border: none; }
+
 .bannerWrap {
   position: relative;
   z-index: 1;
   height: 100vh; }
-  .bannerWrap .video_bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; }
-    .bannerWrap .video_bg #myVideo {
-      min-width: 100%;
-      min-height: 100%;
-      height: auto;
-      width: auto;
-      max-width: 100%;
-      margin: 0;
-      line-height: 1;
-      border: none; }
-  .bannerWrap.banner_1 {
-    background: url("../../assets/img/banner_img.jpg") no-repeat scroll top left/cover; }
-    .bannerWrap.banner_1:before {
-      position: absolute;
-      content: "";
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.6);
-      top: 0;
-      left: 0; }
   .bannerWrap.banner_2 {
     background: url("../../assets/img/5C2C23FE.jpg") no-repeat scroll top left/cover; }
   .bannerWrap.banner_3 {
@@ -170,8 +173,9 @@ ul {
     z-index: 1; }
     .bannerWrap .bannerInner .tagTop {
       position: absolute;
-      top: 50px;
-      left: 0; }
+      top: 70px;
+      left: 0;
+      overflow: hidden; }
       .bannerWrap .bannerInner .tagTop p {
         color: #fff;
         display: -webkit-box;
@@ -179,7 +183,8 @@ ul {
         display: flex;
         -webkit-box-align: center;
         -ms-flex-align: center;
-        align-items: center; }
+        align-items: center;
+        width: 200px; }
         .bannerWrap .bannerInner .tagTop p span img {
           margin-top: 6px;
           margin-left: 10px; }
@@ -194,7 +199,8 @@ ul {
         margin-bottom: 20px;
         text-transform: uppercase; }
         .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle span {
-          display: block; }
+          display: block;
+          overflow: hidden; }
         .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l2 {
           font-size: 83px; }
         .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l3 {
@@ -224,18 +230,21 @@ ul {
         .bannerWrap .bannerInner .bannerContent .contentInner .roundShapeImg img {
           max-width: 280px;
           width: 100%; }
-      .bannerWrap .bannerInner .bannerContent .contentInner .bannerRightSingleText {
-        max-width: 310px;
-        width: 100%;
-        text-align: right; }
-        .bannerWrap .bannerInner .bannerContent .contentInner .bannerRightSingleText h5 {
-          color: #fff;
-          margin-bottom: 10px;
-          font-size: 16px;
-          text-transform: uppercase; }
-        .bannerWrap .bannerInner .bannerContent .contentInner .bannerRightSingleText p {
-          color: #fff;
-          font-size: 13px; }
+      .bannerWrap .bannerInner .bannerContent .contentInner .contentInnerInner {
+        position: relative; }
+        .bannerWrap .bannerInner .bannerContent .contentInner .contentInnerInner .bannerRightSingleText {
+          max-width: 310px;
+          width: 100%;
+          text-align: right;
+          margin-bottom: 20px; }
+          .bannerWrap .bannerInner .bannerContent .contentInner .contentInnerInner .bannerRightSingleText h5 {
+            color: #fff;
+            margin-bottom: 10px;
+            font-size: 16px;
+            text-transform: uppercase; }
+          .bannerWrap .bannerInner .bannerContent .contentInner .contentInnerInner .bannerRightSingleText p {
+            color: #fff;
+            font-size: 13px; }
 
 .btnWrap .btnGlob {
   font-size: 12px;
@@ -285,7 +294,7 @@ ul {
 
 .circleText {
   position: absolute;
-  top: 50px;
+  top: 60px;
   right: 0;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -398,3 +407,65 @@ ul {
   margin: 0 auto 20px;
   padding: 10px;
   cursor: pointer; }
+
+.scrollDownAnimationWrap {
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  width: 100%;
+  height: 100%; }
+
+.scrollDownAnimation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.scrollDownAnimation span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin: -10px;
+  -webkit-animation: animate 2s infinite;
+  animation: animate 2s infinite; }
+
+.scrollDownAnimation span:nth-child(2) {
+  -webkit-animation-delay: -0.2s;
+  animation-delay: -0.2s; }
+
+.scrollDownAnimation span:nth-child(3) {
+  -webkit-animation-delay: -0.4s;
+  animation-delay: -0.4s; }
+
+@-webkit-keyframes animate {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(45deg) translate(-20px, -20px);
+    transform: rotate(45deg) translate(-20px, -20px); }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotate(45deg) translate(20px, 20px);
+    transform: rotate(45deg) translate(20px, 20px); } }
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(45deg) translate(-20px, -20px);
+    transform: rotate(45deg) translate(-20px, -20px); }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotate(45deg) translate(20px, 20px);
+    transform: rotate(45deg) translate(20px, 20px); } }

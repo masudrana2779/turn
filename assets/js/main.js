@@ -3,6 +3,7 @@
 
 
     $(document).ready(function () {
+
         function roundTextContent(selector) {
 
             let degreeToRadian = (angle) => {
@@ -45,7 +46,26 @@
         roundTextContent('.circular-text2');
         roundTextContent('.circular-text3');
 
-        
+        var TopOffSet = $('.banner_1').offsetTop;
+        console.log(TopOffSet,'TopOffSet')
+
+        $('.allBody').hide();
+        $('.banner_1 .scrollDownAnimationOuter').hide();
+        $('body').css({
+            overflow: 'hidden',
+            paddingRight: '17px'
+        });
+
+
+        function addClassbanner_1() {
+            $('.allBody').slideDown(2000);
+            $('.banner_1 .scrollDownAnimationOuter').fadeIn(2000);
+            $('body').removeAttr("style");
+        }
+
+        setTimeout(function () {
+            addClassbanner_1();
+        }, 4000);
 
     });
 }(jQuery);
