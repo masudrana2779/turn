@@ -163,17 +163,30 @@ ul {
 .bannerWrap {
   position: relative;
   z-index: 1;
-  height: 100vh; }
+  min-height: 100vh;
+  height: auto;
+  width: 100% !important; }
+  .bannerWrap.banner_1 .circleText {
+    top: 60px; }
+  .bannerWrap.banner_1 .bannerInner .tagTop {
+    top: 70px; }
   .bannerWrap.banner_2 {
     background: url("../../assets/img/5C2C23FE.jpg") no-repeat scroll top left/cover; }
   .bannerWrap.banner_3 {
     background: url("../../assets/img/5C2C2402.jpg") no-repeat scroll top left/cover; }
+  .bannerWrap.banner_4 {
+    background: url("../../assets/img/5C2C23FE.jpg") no-repeat scroll top left/cover; }
+    .bannerWrap.banner_4 .scrollDownAnimationWrap {
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg); }
   .bannerWrap .bannerInner {
     position: relative;
-    z-index: 1; }
+    z-index: 1;
+    padding: 70px 0; }
     .bannerWrap .bannerInner .tagTop {
       position: absolute;
-      top: 70px;
+      top: 40px;
       left: 0;
       overflow: hidden; }
       .bannerWrap .bannerInner .tagTop p {
@@ -294,7 +307,7 @@ ul {
 
 .circleText {
   position: absolute;
-  top: 60px;
+  top: 30px;
   right: 0;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -469,3 +482,20 @@ ul {
     opacity: 0;
     -webkit-transform: rotate(45deg) translate(20px, 20px);
     transform: rotate(45deg) translate(20px, 20px); } }
+
+.teamContentWrap h6 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px; }
+
+.teamContentWrap .teamSingleItemRow {
+  margin-bottom: 20px; }
+
+.teamContentWrap .temImg .imgInner {
+  max-width: 200px;
+  width: 100%;
+  height: 220px;
+  border: 1px solid #333; }
+  .teamContentWrap .temImg .imgInner img {
+    width: 100%;
+    height: 100%; }

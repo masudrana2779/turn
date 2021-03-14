@@ -3,30 +3,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let timeline = new TimelineMax();
     timeline
-        .to('.scrollDownAnimationWrap', 40, {
+        .to('.banner_1 .scrollDownAnimationWrap', 4, {
             autoAlpha: 0,
             ease: Power3.easeInOut
-        }, '-=40')
-        .from('.tagTop_1', 40, {
+        }, '-=4')
+        .from('.tagTop_1', 4, {
             width: 0,
             ease: Power3.easeInOut
-        }, '-=40')
-        .from('.l1_1', 20, {
+        }, '-=4')
+        .from('.l1_1', 4, {
             height: 0, autoAlpha: 0,
 
             ease: Power3.easeInOut
         })
-        .from('.l1_2', 20, {
+        .from('.l1_2', 4, {
             autoAlpha: 0,
             y: 50,
             ease: Power3.easeInOut
         })
-        .from('.l1_3', 20, {
+        .from('.l1_3', 4, {
             autoAlpha: 0,
             y: 100,
             ease: Power3.easeInOut
         })
-        .from('.btn1', 15, {
+        .from('.btn1', 4, {
             autoAlpha: 0,
             y: 50,
             ease: Power3.easeInOut
@@ -74,53 +74,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let timeline2 = new TimelineMax();
     timeline2
-        .from('.tagTop_2', 4, {
+        .from('.banner_2 .scrollDownAnimationWrap', 5, {
+            autoAlpha: 0,
+            ease: Power3.easeInOut
+        })
+        .to('.tagTop_2', 5, {
             width: 0,
             ease: Power3.easeInOut
-        }, '-=4')
-        .from('.l4_1', 20, {
-            height: 0, autoAlpha: 0,
-            ease: Power3.easeInOut
         })
-        .from('.l5_1', 20, {
-            autoAlpha: 0,
-            y: 50,
-            ease: Power3.easeInOut
-        })
-        .from('.btn_3', 15, {
-            autoAlpha: 0,
-            y: 50,
-            ease: Power3.easeInOut
-        })
-        .from('.btn_4', 5, {
-            autoAlpha: 0,
-            y: 50,
-            ease: Power3.easeInOut
-        })
-
-        .from('.circleTextWrap_2', 5, {
+        .to('.Text_2', 4, {
             autoAlpha: 0,
             y: -50,
             ease: Power3.easeInOut
         })
-        .from('.portfolioAccordion_1', 5, {
+        .to('.portfolioAccordion', 5, {
             autoAlpha: 0,
-            y: 50,
-            ease: Power3.easeInOut
-        })
-        .from('.portfolioAccordion_2', 5, {
-            autoAlpha: 0,
-            y: 50,
-            ease: Power3.easeInOut
-        })
-        .from('.portfolioAccordion_3', 5, {
-            autoAlpha: 0,
-            y: 50,
-            ease: Power3.easeInOut
-        })
-        .from('.portfolioAccordion_4', 5, {
-            autoAlpha: 0,
-            y: 50,
+            y: -50,
             ease: Power3.easeInOut
         })
 
@@ -138,92 +107,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let timeline3 = new TimelineMax();
     timeline3
-        .from('.tagTop_3', 4, {
+        .from('.banner_3 .scrollDownAnimationWrap', 5, {
+            autoAlpha: 0,
+            ease: Power3.easeInOut
+        })
+        .to('.tagTop_3', 4, {
             width: 0,
             ease: Power3.easeInOut
-        }, '-=4')
-        .from('.l6_1', 20, {
-            height: 0, autoAlpha: 0,
-            ease: Power3.easeInOut
         })
-        .from('.L7_1', 20, {
+        .to('.Text_3', 4, {
+            y: -50,
             autoAlpha: 0,
-            y: 50,
             ease: Power3.easeInOut
         })
-        .from('.btn_6', 15, {
-            autoAlpha: 0,
-            y: 50,
-            ease: Power3.easeInOut
-        })
-        .from('.btn_7', 5, {
-            autoAlpha: 0,
-            y: 50,
-            ease: Power3.easeInOut
-        })
-        .from('.circleTextWrap_3', 5, {
+        .to('.clientLogoWrap', 5, {
             autoAlpha: 0,
             y: -50,
-            ease: Power3.easeInOut
-        })
-        .from('.logoItem_1', 5, {
-            autoAlpha: 0,
-            y: 50,
-            ease: Power3.easeInOut
-        })
-        .from('.logoItem_2', 5, {
-            autoAlpha: 0,
-            y: 50,
-            ease: Power3.easeInOut
-        })
-        .from('.logoItem_3', 5, {
-            autoAlpha: 0,
-            y: 50,
-            ease: Power3.easeInOut
-        })
-        .from('.logoItem_4', 5, {
-            autoAlpha: 0,
-            y: 50,
-            ease: Power3.easeInOut
-        })
-        .from('.logoItem_5', 5, {
-            autoAlpha: 0,
-            y: 50,
-            ease: Power3.easeInOut
-        })
-        .from('.logoItem_6', 5, {
-            autoAlpha: 0,
-            y: 50,
-            ease: Power3.easeInOut
-        })
-        .from('.logoItem_7', 5, {
-            autoAlpha: 0,
-            y: 50,
-            ease: Power3.easeInOut
-        })
-        .from('.logoItem_8', 5, {
-            autoAlpha: 0,
-            y: 50,
-            ease: Power3.easeInOut
-        })
-        .from('.logoItem_9', 5, {
-            autoAlpha: 0,
-            y: 50,
-            ease: Power3.easeInOut
-        })
-        .from('.logoItem_10', 5, {
-            autoAlpha: 0,
-            y: 50,
-            ease: Power3.easeInOut
-        })
-        .from('.logoItem_11', 5, {
-            autoAlpha: 0,
-            y: 50,
-            ease: Power3.easeInOut
-        })
-        .from('.logoItem_12', 5, {
-            autoAlpha: 0,
-            y: 50,
             ease: Power3.easeInOut
         })
     let scene3 = new ScrollMagic.Scene({
@@ -234,5 +133,55 @@ document.addEventListener('DOMContentLoaded', () => {
     })
         .setTween(timeline3)
         .setPin('.banner_3')
+        .addTo(controller);
+
+    let timeline4 = new TimelineMax();
+    timeline4
+        .from('.banner_4 .scrollDownAnimationWrap', 5, {
+            autoAlpha: 0,
+            ease: Power3.easeInOut
+        })
+        .to('.tagTop_4', 4, {
+            width: 0,
+            ease: Power3.easeInOut
+        }, '-=4')
+        .to('.Text_4', 4, {
+            y: -50,
+            autoAlpha: 0,
+            ease: Power3.easeInOut
+        })
+        .to('.tTopPara', 4, {
+            autoAlpha: 0,
+            y: -50,
+            ease: Power3.easeInOut
+        })
+        .to('.TeamHeading', 4, {
+            autoAlpha: 0,
+            y: -50,
+            ease: Power3.easeInOut
+        })
+        .to('.teamRow_1', 4, {
+            autoAlpha: 0,
+            y: -50,
+            ease: Power3.easeInOut
+        })
+        .to('.teamRow_2', 4, {
+            autoAlpha: 0,
+            y: -50,
+            ease: Power3.easeInOut
+        })
+        .to('.teamRow_3', 4, {
+            autoAlpha: 0,
+            y: -50,
+            ease: Power3.easeInOut
+        })
+    let scene4 = new ScrollMagic.Scene({
+        triggerElement: '.banner_4',
+        duration: '300%',
+        triggerHook: 0,
+        offset: '0'
+    })
+        .setTween(timeline4)
+        .setPin('.banner_4')
         .addTo(controller);
 })

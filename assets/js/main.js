@@ -45,6 +45,7 @@
         roundTextContent('.circular-text1');
         roundTextContent('.circular-text2');
         roundTextContent('.circular-text3');
+        roundTextContent('.circular-text4');
 
         var TopOffSet = $('.banner_1').offsetTop;
         console.log(TopOffSet,'TopOffSet')
