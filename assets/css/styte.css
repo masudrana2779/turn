@@ -499,3 +499,12 @@ ul {
   .teamContentWrap .temImg .imgInner img {
     width: 100%;
     height: 100%; }
+
+.bannerInnerClientWrap .circleText {
+  top: 60px; }
+
+.bannerInnerClientWrap .clientLogoWrap {
+  padding-top: 100px; }
+  .bannerInnerClientWrap .clientLogoWrap .logoItem {
+    width: 100%;
+    height: auto; }
