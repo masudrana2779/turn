@@ -50,12 +50,18 @@
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0;
   width: 100%;
-  padding: 10px 0;
+  padding: 20px 0;
+  transition: all 0.5s;
   z-index: 1100;
+  &.fixedMenu {
+    padding: 10px 0;
+    background: #fff;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0,0.2);
+  }
 
   .navbar {
     padding: 0;

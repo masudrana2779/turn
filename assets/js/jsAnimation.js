@@ -3,63 +3,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let timeline = new TimelineMax();
     timeline
-        .to('.banner_1 .scrollDownAnimationWrap', 4, {
-            autoAlpha: 0,
-            ease: Power3.easeInOut
-        }, '-=4')
-        .from('.tagTop_1', 4, {
+        .to('.tagTop_1', 4, {
             width: 0,
             ease: Power3.easeInOut
         }, '-=4')
-        .from('.l1_1', 4, {
-            height: 0, autoAlpha: 0,
-
+        .to('.Text_1', 4, {
+            autoAlpha: 0,
+            y: -50,
             ease: Power3.easeInOut
         })
-        .from('.l1_2', 4, {
+        .to('.contentInner_1', 4, {
             autoAlpha: 0,
-            y: 50,
+            y: -50,
             ease: Power3.easeInOut
         })
-        .from('.l1_3', 4, {
-            autoAlpha: 0,
-            y: 100,
-            ease: Power3.easeInOut
-        })
-        .from('.btn1', 4, {
-            autoAlpha: 0,
-            y: 50,
-            ease: Power3.easeInOut
-        })
-        .from('.btn2', 5, {
-            autoAlpha: 0,
-            y: 50,
-            ease: Power3.easeInOut
-        })
-        .from('.btext_1', 40, {
-            autoAlpha: 0,
-            y: 50,
-            ease: Power3.easeInOut
-        }, '-=40')
-        .from('.btext_2', 30, {
-            autoAlpha: 0,
-            y: 50,
-            ease: Power3.easeInOut
-        })
-        .from('.btext_3', 20, {
-            autoAlpha: 0,
-            y: 50,
-            ease: Power3.easeInOut
-        })
-        .from('.btext_4', 15, {
-            autoAlpha: 0,
-            y: 50,
-            ease: Power3.easeInOut
-        })
-        .from('.roundShapeImg img', 100, {
-            rotation: 360,
-            ease: Power3.easeInOut
-        }, '-=100')
+        // .to('.roundShapeImg img', 100, {
+        //     rotation: 360,
+        //     ease: Power3.easeInOut
+        // }, '-=100')
 
 
     let scene = new ScrollMagic.Scene({

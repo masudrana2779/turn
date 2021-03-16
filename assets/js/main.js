@@ -48,7 +48,7 @@
         roundTextContent('.circular-text4');
 
         var TopOffSet = $('.banner_1').offsetTop;
-        console.log(TopOffSet,'TopOffSet')
+        console.log(TopOffSet, 'TopOffSet')
 
         $('.allBody').hide();
         $('.banner_1 .scrollDownAnimationOuter').hide();
@@ -59,7 +59,7 @@
 
 
         function addClassbanner_1() {
-            $('.allBody').slideDown(2000);
+            $('.allBody').fadeIn(1500);
             $('.banner_1 .scrollDownAnimationOuter').fadeIn(2000);
             $('body').removeAttr("style");
         }
@@ -67,6 +67,30 @@
         setTimeout(function () {
             addClassbanner_1();
         }, 4000);
+
+
+        function wowInit() {
+            new WOW().init();
+        }
+
+        wowInit();
+
+
+        function scrollTopFixed(htOp) {
+            var windowTop = $(window).scrollTop();
+            if (windowTop > 50) {
+                htOp.addClass('fixedMenu');
+            } else {
+                htOp.removeClass('fixedMenu');
+            }
+        }
+
+        var htOp = $('.header');
+        scrollTopFixed(htOp);
+        $(window).scroll(function () {
+            scrollTopFixed(htOp);
+        })
+
 
     });
 }(jQuery);
