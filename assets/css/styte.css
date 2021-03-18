@@ -137,9 +137,9 @@ ul {
       text-transform: uppercase;
       margin: 1px;
       padding: 10px 15px; }
-      .header .navbar .mainMenu .navbar-nav .nav-item .nav-link.active, .header .navbar .mainMenu .navbar-nav .nav-item .nav-link:hover {
-        background: #6f531d;
-        color: #fff; }
+    .header .navbar .mainMenu .navbar-nav .nav-item.active .nav-link, .header .navbar .mainMenu .navbar-nav .nav-item:hover .nav-link {
+      background: #6f531d;
+      color: #fff; }
 
 .video_bg {
   position: fixed;
@@ -516,3 +516,43 @@ ul {
   .bannerInnerClientWrap .clientLogoWrap .logoItem {
     width: 100%;
     height: auto; }
+
+#section1 .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l1 {
+  -webkit-animation: fadeOutRight 1s both;
+  animation: fadeOutRight 1s both; }
+
+#section1 .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l2 {
+  -webkit-animation: fadeOutRight 1s both;
+  animation: fadeOutRight 1s both; }
+
+#section1 .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l3 {
+  -webkit-animation: fadeOutRight 1s both;
+  animation: fadeOutRight 1s both; }
+
+#section1 .bannerWrap .bannerInner .bannerContent .contentInner .btnWrap .btnGlob.btn_1 {
+  -webkit-animation: fadeOutUp 1s both;
+  animation: fadeOutUp 1s both; }
+
+#section1 .bannerWrap .bannerInner .bannerContent .contentInner .btnWrap .btnGlob.btn_2 {
+  -webkit-animation: fadeOutUp 1s both;
+  animation: fadeOutUp 1s both; }
+
+#section1.active .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l1 {
+  -webkit-animation: fadeInLeft 1s ease 1s both;
+  animation: fadeInLeft 1s ease 1s both; }
+
+#section1.active .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l2 {
+  -webkit-animation: fadeInLeft 1.2s ease 1.2s both;
+  animation: fadeInLeft 1.2s ease 1.2s both; }
+
+#section1.active .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l3 {
+  -webkit-animation: fadeInLeft 1.3s ease 1.3s both;
+  animation: fadeInLeft 1.3s ease 1.3s both; }
+
+#section1.active .bannerWrap .bannerInner .bannerContent .contentInner .btnWrap .btnGlob.btn_1 {
+  -webkit-animation: fadeInUp 1.5s ease 1.5s both;
+  animation: fadeInUp 1.5s ease 1.5s both; }
+
+#section1.active .bannerWrap .bannerInner .bannerContent .contentInner .btnWrap .btnGlob.btn_2 {
+  -webkit-animation: fadeInUp 1.7s ease 1.7s both;
+  animation: fadeInUp 1.7s ease 1.7s both; }

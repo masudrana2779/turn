@@ -47,9 +47,6 @@
         roundTextContent('.circular-text3');
         roundTextContent('.circular-text4');
 
-        var TopOffSet = $('.banner_1').offsetTop;
-        console.log(TopOffSet, 'TopOffSet')
-
         $('.allBody').hide();
         $('.banner_1 .scrollDownAnimationOuter').hide();
         $('body').css({
@@ -57,6 +54,31 @@
             paddingRight: '17px'
         });
 
+        $('.resetTilt').tilt({
+            reset: false
+        })
+        $('.glareTilt').tilt({
+            glare: true,
+            maxGlare: .5
+        })
+
+        $('.ZoomTilt').tilt({
+            scale: 1.2
+        })
+
+        function allPagepiling() {
+            $('#pagepiling').pagepiling({
+                menu: '#menu',
+                anchors: ['page1', 'page2', 'page3', 'page4'],
+                navigation: {
+                    'textColor': '#f2f2f2',
+                    'bulletsColor': '#ccc',
+                    'position': 'right',
+                }
+            });
+        }
+
+        allPagepiling();
 
         function addClassbanner_1() {
             $('.allBody').fadeIn(1500);
@@ -69,27 +91,8 @@
         }, 4000);
 
 
-        function wowInit() {
-            new WOW().init();
-        }
-
-        wowInit();
 
 
-        function scrollTopFixed(htOp) {
-            var windowTop = $(window).scrollTop();
-            if (windowTop > 50) {
-                htOp.addClass('fixedMenu');
-            } else {
-                htOp.removeClass('fixedMenu');
-            }
-        }
-
-        var htOp = $('.header');
-        scrollTopFixed(htOp);
-        $(window).scroll(function () {
-            scrollTopFixed(htOp);
-        })
 
 
     });

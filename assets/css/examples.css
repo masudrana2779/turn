@@ -46,48 +46,48 @@ abbr,acronym { border: 0;
 /* Menu
  * --------------------------------------- */
 #menu li {
-	display:inline-block;
-	margin: 10px;
-	color: #000;
-	background:#fff;
-	background: rgba(255,255,255, 0.5);
-	-webkit-border-radius: 6px;
-    border-radius: 6px;
+	/*display:inline-block;*/
+	/*margin: 10px;*/
+	/*color: #000;*/
+	/*background:#fff;*/
+	/*background: rgba(255,255,255, 0.5);*/
+	/*-webkit-border-radius: 6px;*/
+    /*border-radius: 6px;*/
 }
 #menu li.active{
-	background:#666;
-	background: rgba(0,0,0, 0.5);
-	color: #fff;
+	/*background:#666;*/
+	/*background: rgba(0,0,0, 0.5);*/
+	/*color: #fff;*/
 }
 #menu li a{
-	text-decoration:none;
-	color: #000;
+	/*text-decoration:none;*/
+	/*color: #000;*/
 }
 #menu li.active a:hover{
-	color: #000;
+	/*color: #000;*/
 }
 #menu li:hover{
-	background: rgba(255,255,255, 0.8);
+	/*background: rgba(255,255,255, 0.8);*/
 }
 #menu li a,
 #menu li.active a{
-	padding: 9px 18px;
-	display:block;
+	/*padding: 9px 18px;*/
+	/*display:block;*/
 }
 #menu li.active a{
-	color: #fff;
+	/*color: #fff;*/
 }
 
 #menu{
-	height: 60px;
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    right: 0;
-    text-align: right;
-    top: 0;
-    width: 100%;
-    z-index: 70;
+	/*height: 60px;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*position: fixed;*/
+    /*right: 0;*/
+    /*text-align: right;*/
+    /*top: 0;*/
+    /*width: 100%;*/
+    /*z-index: 70;*/
 }
 
 

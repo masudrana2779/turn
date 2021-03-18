@@ -57,10 +57,11 @@
   padding: 20px 0;
   transition: all 0.5s;
   z-index: 1100;
+
   &.fixedMenu {
     padding: 10px 0;
     background: #fff;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0,0.2);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
   }
 
   .navbar {
@@ -90,8 +91,11 @@
             margin: 1px;
             padding: 10px 15px;
 
-            &.active,
-            &:hover {
+          }
+
+          &.active,
+          &:hover {
+            .nav-link {
               background: $tcolor;
               color: $white;
             }
@@ -177,6 +181,7 @@
 
   &.banner_4 {
     background: url("../../assets/img/5C2C23FE.jpg") no-repeat scroll top left / cover;
+
     .scrollDownAnimationWrap {
       transform: rotate(180deg);
     }
@@ -592,15 +597,79 @@
     }
   }
 }
+
 .bannerInnerClientWrap {
   .circleText {
     top: 60px;
   }
+
   .clientLogoWrap {
     padding-top: 100px;
+
     .logoItem {
       width: 100%;
       height: auto;
+    }
+  }
+}
+
+#section1 {
+  .bannerWrap {
+    .bannerInner {
+      .bannerContent {
+        .contentInner {
+          .bannerTitle {
+            .l1 {
+              animation: fadeOutRight 1s both;
+            }
+            .l2 {
+              animation: fadeOutRight 1s both;
+            }
+            .l3 {
+              animation: fadeOutRight 1s both;
+            }
+          }
+          .btnWrap {
+            .btnGlob {
+              &.btn_1 {
+                animation: fadeOutUp 1s both;
+              }
+              &.btn_2 {
+                animation: fadeOutUp 1s both;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.active {
+    .bannerWrap {
+      .bannerInner {
+        .bannerContent {
+          .contentInner {
+            .bannerTitle {
+              .l1 {
+                animation: fadeInLeft 1s ease 1s both;
+              }
+              .l2 {
+                animation: fadeInLeft 1.2s ease 1.2s both;
+              }
+              .l3 {
+                animation: fadeInLeft 1.3s ease 1.3s both;
+              }
+            }
+            .btnWrap {
+              .btnGlob {
+                &.btn_1 {
+                  animation: fadeInUp 1.5s ease 1.5s both;}
+                &.btn_2 {
+                  animation: fadeInUp 1.7s ease 1.7s both;}
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
