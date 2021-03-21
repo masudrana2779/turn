@@ -47,13 +47,6 @@
         roundTextContent('.circular-text3');
         roundTextContent('.circular-text4');
 
-        $('.allBody').hide();
-        $('.banner_1 .scrollDownAnimationOuter').hide();
-        $('body').css({
-            overflow: 'hidden',
-            paddingRight: '17px'
-        });
-
         $('.resetTilt').tilt({
             reset: false
         })
@@ -79,6 +72,15 @@
         }
 
         allPagepiling();
+
+
+
+        $('.allBody').hide();
+        $('.banner_1 .scrollDownAnimationOuter').hide();
+        $('body').css({
+            overflow: 'hidden',
+            paddingRight: '17px'
+        });
 
         function addClassbanner_1() {
             $('.allBody').fadeIn(1500);

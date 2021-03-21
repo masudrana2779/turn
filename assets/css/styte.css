@@ -174,10 +174,6 @@ ul {
   min-height: 100vh;
   height: auto;
   width: 100% !important; }
-  .bannerWrap.banner_1 .circleText {
-    top: 60px; }
-  .bannerWrap.banner_1 .bannerInner .tagTop {
-    top: 70px; }
   .bannerWrap.banner_2 {
     background: url("../../assets/img/5C2C23FE.jpg") no-repeat scroll top left/cover; }
   .bannerWrap.banner_3 {
@@ -194,7 +190,7 @@ ul {
     padding: 70px 0; }
     .bannerWrap .bannerInner .tagTop {
       position: absolute;
-      top: 40px;
+      top: 80px;
       left: 0;
       overflow: hidden; }
       .bannerWrap .bannerInner .tagTop p {
@@ -315,7 +311,7 @@ ul {
 
 .circleText {
   position: absolute;
-  top: 30px;
+  top: 60px;
   right: 0;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -537,6 +533,14 @@ ul {
   -webkit-animation: fadeOutUp 1s both;
   animation: fadeOutUp 1s both; }
 
+#section1 .bannerWrap .bannerInner .bannerRightContent .contentInner .contentInnerInner .bannerRightSingleText h5 {
+  -webkit-animation: fadeOutDown 1s both;
+  animation: fadeOutDown 1s both; }
+
+#section1 .bannerWrap .bannerInner .bannerRightContent .contentInner .contentInnerInner .bannerRightSingleText p {
+  -webkit-animation: fadeOutDown 1s both;
+  animation: fadeOutDown 1s both; }
+
 #section1.active .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l1 {
   -webkit-animation: fadeInLeft 1s ease 1s both;
   animation: fadeInLeft 1s ease 1s both; }
@@ -556,3 +560,283 @@ ul {
 #section1.active .bannerWrap .bannerInner .bannerContent .contentInner .btnWrap .btnGlob.btn_2 {
   -webkit-animation: fadeInUp 1.7s ease 1.7s both;
   animation: fadeInUp 1.7s ease 1.7s both; }
+
+#section1.active .bannerWrap .bannerInner .bannerRightContent .contentInner .contentInnerInner .bannerRightSingleText h5 {
+  -webkit-animation: fadeInDown 1s ease 1s both;
+  animation: fadeInDown 1s ease 1s both; }
+
+#section1.active .bannerWrap .bannerInner .bannerRightContent .contentInner .contentInnerInner .bannerRightSingleText p {
+  -webkit-animation: fadeInDown 1.2s ease 1.2s both;
+  animation: fadeInDown 1.2s ease 1.2s both; }
+
+#section2 .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l4 {
+  -webkit-animation: fadeOutRight 1s both;
+  animation: fadeOutRight 1s both; }
+
+#section2 .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l5 {
+  -webkit-animation: fadeOutRight 1s both;
+  animation: fadeOutRight 1s both; }
+
+#section2 .bannerWrap .bannerInner .bannerContent .contentInner .btnWrap .btnGlob.btn_1 {
+  -webkit-animation: fadeOutUp 1s both;
+  animation: fadeOutUp 1s both; }
+
+#section2 .bannerWrap .bannerInner .bannerContent .contentInner .btnWrap .btnGlob.btn_2 {
+  -webkit-animation: fadeOutUp 1s both;
+  animation: fadeOutUp 1s both; }
+
+#section2 .bannerWrap .bannerInner .bannerRightContent .contentInner .portfolioAccordion .portfolioAccordion_1 {
+  -webkit-animation: fadeOutDown 1s both;
+  animation: fadeOutDown 1s both; }
+
+#section2 .bannerWrap .bannerInner .bannerRightContent .contentInner .portfolioAccordion .portfolioAccordion_2 {
+  -webkit-animation: fadeOutDown 1s both;
+  animation: fadeOutDown 1s both; }
+
+#section2 .bannerWrap .bannerInner .bannerRightContent .contentInner .portfolioAccordion .portfolioAccordion_3 {
+  -webkit-animation: fadeOutDown 1s both;
+  animation: fadeOutDown 1s both; }
+
+#section2 .bannerWrap .bannerInner .bannerRightContent .contentInner .portfolioAccordion .portfolioAccordion_4 {
+  -webkit-animation: fadeOutDown 1s both;
+  animation: fadeOutDown 1s both; }
+
+#section2.active .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l4 {
+  -webkit-animation: fadeInLeft 1s ease 1s both;
+  animation: fadeInLeft 1s ease 1s both; }
+
+#section2.active .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l5 {
+  -webkit-animation: fadeInLeft 1.2s ease 1.2s both;
+  animation: fadeInLeft 1.2s ease 1.2s both; }
+
+#section2.active .bannerWrap .bannerInner .bannerContent .contentInner .btnWrap .btnGlob.btn_1 {
+  -webkit-animation: fadeInUp 1.5s ease 1.5s both;
+  animation: fadeInUp 1.5s ease 1.5s both; }
+
+#section2.active .bannerWrap .bannerInner .bannerContent .contentInner .btnWrap .btnGlob.btn_2 {
+  -webkit-animation: fadeInUp 1.7s ease 1.7s both;
+  animation: fadeInUp 1.7s ease 1.7s both; }
+
+#section2.active .bannerWrap .bannerInner .bannerRightContent .contentInner .portfolioAccordion .portfolioAccordion_1 {
+  -webkit-animation: fadeInDown 1s ease 1s both;
+  animation: fadeInDown 1s ease 1s both; }
+
+#section2.active .bannerWrap .bannerInner .bannerRightContent .contentInner .portfolioAccordion .portfolioAccordion_2 {
+  -webkit-animation: fadeInDown 1.1s ease 1.1s both;
+  animation: fadeInDown 1.1s ease 1.1s both; }
+
+#section2.active .bannerWrap .bannerInner .bannerRightContent .contentInner .portfolioAccordion .portfolioAccordion_3 {
+  -webkit-animation: fadeInDown 1.2s ease 1.2s both;
+  animation: fadeInDown 1.2s ease 1.2s both; }
+
+#section2.active .bannerWrap .bannerInner .bannerRightContent .contentInner .portfolioAccordion .portfolioAccordion_4 {
+  -webkit-animation: fadeInDown 1.3s ease 1.3s both;
+  animation: fadeInDown 1.3s ease 1.3s both; }
+
+#section3 .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l6 {
+  -webkit-animation: fadeOutRight 1s both;
+  animation: fadeOutRight 1s both; }
+
+#section3 .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l5 {
+  -webkit-animation: fadeOutRight 1s both;
+  animation: fadeOutRight 1s both; }
+
+#section3 .bannerWrap .bannerInner .bannerContent .contentInner .btnWrap .btnGlob.btn_1 {
+  -webkit-animation: fadeOutUp 1s both;
+  animation: fadeOutUp 1s both; }
+
+#section3 .bannerWrap .bannerInner .bannerContent .contentInner .btnWrap .btnGlob.btn_2 {
+  -webkit-animation: fadeOutUp 1s both;
+  animation: fadeOutUp 1s both; }
+
+#section3 .bannerWrap .bannerInner .bannerRightContent .contentInner .clientLogoWrap .logoItem_1 {
+  -webkit-animation: fadeOutUp 1s both;
+  animation: fadeOutUp 1s both; }
+
+#section3 .bannerWrap .bannerInner .bannerRightContent .contentInner .clientLogoWrap .logoItem_2 {
+  -webkit-animation: fadeOutUp 1s both;
+  animation: fadeOutUp 1s both; }
+
+#section3 .bannerWrap .bannerInner .bannerRightContent .contentInner .clientLogoWrap .logoItem_3 {
+  -webkit-animation: fadeOutUp 1s both;
+  animation: fadeOutUp 1s both; }
+
+#section3 .bannerWrap .bannerInner .bannerRightContent .contentInner .clientLogoWrap .logoItem_4 {
+  -webkit-animation: fadeOutUp 1s both;
+  animation: fadeOutUp 1s both; }
+
+#section3 .bannerWrap .bannerInner .bannerRightContent .contentInner .clientLogoWrap .logoItem_5 {
+  -webkit-animation: fadeOutUp 1s both;
+  animation: fadeOutUp 1s both; }
+
+#section3 .bannerWrap .bannerInner .bannerRightContent .contentInner .clientLogoWrap .logoItem_6 {
+  -webkit-animation: fadeOutUp 1s both;
+  animation: fadeOutUp 1s both; }
+
+#section3 .bannerWrap .bannerInner .bannerRightContent .contentInner .clientLogoWrap .logoItem_7 {
+  -webkit-animation: fadeOutUp 1s both;
+  animation: fadeOutUp 1s both; }
+
+#section3 .bannerWrap .bannerInner .bannerRightContent .contentInner .clientLogoWrap .logoItem_8 {
+  -webkit-animation: fadeOutUp 1s both;
+  animation: fadeOutUp 1s both; }
+
+#section3 .bannerWrap .bannerInner .bannerRightContent .contentInner .clientLogoWrap .logoItem_9 {
+  -webkit-animation: fadeOutUp 1s both;
+  animation: fadeOutUp 1s both; }
+
+#section3 .bannerWrap .bannerInner .bannerRightContent .contentInner .clientLogoWrap .logoItem_10 {
+  -webkit-animation: fadeOutUp 1s both;
+  animation: fadeOutUp 1s both; }
+
+#section3 .bannerWrap .bannerInner .bannerRightContent .contentInner .clientLogoWrap .logoItem_11 {
+  -webkit-animation: fadeOutUp 1s both;
+  animation: fadeOutUp 1s both; }
+
+#section3 .bannerWrap .bannerInner .bannerRightContent .contentInner .clientLogoWrap .logoItem_12 {
+  -webkit-animation: fadeOutUp 1s both;
+  animation: fadeOutUp 1s both; }
+
+#section3.active .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l6 {
+  -webkit-animation: fadeInLeft 1s ease 1s both;
+  animation: fadeInLeft 1s ease 1s both; }
+
+#section3.active .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l5 {
+  -webkit-animation: fadeInLeft 1.2s ease 1.2s both;
+  animation: fadeInLeft 1.2s ease 1.2s both; }
+
+#section3.active .bannerWrap .bannerInner .bannerContent .contentInner .btnWrap .btnGlob.btn_1 {
+  -webkit-animation: fadeInUp 1.5s ease 1.5s both;
+  animation: fadeInUp 1.5s ease 1.5s both; }
+
+#section3.active .bannerWrap .bannerInner .bannerContent .contentInner .btnWrap .btnGlob.btn_2 {
+  -webkit-animation: fadeInUp 1.7s ease 1.7s both;
+  animation: fadeInUp 1.7s ease 1.7s both; }
+
+#section3.active .bannerWrap .bannerInner .bannerRightContent .contentInner .clientLogoWrap .logoItem_1 {
+  -webkit-animation: fadeInDown 0.5s ease 0.5s both;
+  animation: fadeInDown 0.5s ease 0.5s both; }
+
+#section3.active .bannerWrap .bannerInner .bannerRightContent .contentInner .clientLogoWrap .logoItem_2 {
+  -webkit-animation: fadeInDown 0.6s ease 0.6s both;
+  animation: fadeInDown 0.6s ease 0.6s both; }
+
+#section3.active .bannerWrap .bannerInner .bannerRightContent .contentInner .clientLogoWrap .logoItem_3 {
+  -webkit-animation: fadeInDown 0.7s ease 0.7s both;
+  animation: fadeInDown 0.7s ease 0.7s both; }
+
+#section3.active .bannerWrap .bannerInner .bannerRightContent .contentInner .clientLogoWrap .logoItem_4 {
+  -webkit-animation: fadeInDown 0.8s ease 0.8s both;
+  animation: fadeInDown 0.8s ease 0.8s both; }
+
+#section3.active .bannerWrap .bannerInner .bannerRightContent .contentInner .clientLogoWrap .logoItem_5 {
+  -webkit-animation: fadeInDown 0.9s ease 0.9s both;
+  animation: fadeInDown 0.9s ease 0.9s both; }
+
+#section3.active .bannerWrap .bannerInner .bannerRightContent .contentInner .clientLogoWrap .logoItem_6 {
+  -webkit-animation: fadeInDown 1s ease 1s both;
+  animation: fadeInDown 1s ease 1s both; }
+
+#section3.active .bannerWrap .bannerInner .bannerRightContent .contentInner .clientLogoWrap .logoItem_7 {
+  -webkit-animation: fadeInDown 1.1s ease 1.1s both;
+  animation: fadeInDown 1.1s ease 1.1s both; }
+
+#section3.active .bannerWrap .bannerInner .bannerRightContent .contentInner .clientLogoWrap .logoItem_8 {
+  -webkit-animation: fadeInDown 1.2s ease 1.2s both;
+  animation: fadeInDown 1.2s ease 1.2s both; }
+
+#section3.active .bannerWrap .bannerInner .bannerRightContent .contentInner .clientLogoWrap .logoItem_9 {
+  -webkit-animation: fadeInDown 1.3s ease 1.3s both;
+  animation: fadeInDown 1.3s ease 1.3s both; }
+
+#section3.active .bannerWrap .bannerInner .bannerRightContent .contentInner .clientLogoWrap .logoItem_10 {
+  -webkit-animation: fadeInDown 1.4s ease 1.4s both;
+  animation: fadeInDown 1.4s ease 1.4s both; }
+
+#section3.active .bannerWrap .bannerInner .bannerRightContent .contentInner .clientLogoWrap .logoItem_11 {
+  -webkit-animation: fadeInDown 1.5s ease 1.5s both;
+  animation: fadeInDown 1.5s ease 1.5s both; }
+
+#section3.active .bannerWrap .bannerInner .bannerRightContent .contentInner .clientLogoWrap .logoItem_12 {
+  -webkit-animation: fadeInDown 1.6s ease 1.6s both;
+  animation: fadeInDown 1.6s ease 1.6s both; }
+
+#section4 .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l6 {
+  -webkit-animation: fadeOutRight 1s both;
+  animation: fadeOutRight 1s both; }
+
+#section4 .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l5 {
+  -webkit-animation: fadeOutRight 1s both;
+  animation: fadeOutRight 1s both; }
+
+#section4 .bannerWrap .bannerInner .bannerContent .contentInner .btnWrap .btnGlob.btn_1 {
+  -webkit-animation: fadeOutUp 1s both;
+  animation: fadeOutUp 1s both; }
+
+#section4 .bannerWrap .bannerInner .bannerContent .contentInner .btnWrap .btnGlob.btn_2 {
+  -webkit-animation: fadeOutUp 1s both;
+  animation: fadeOutUp 1s both; }
+
+#section4 .bannerWrap .bannerInner .bannerRightContent .contentInner .teamContentWrap .tTopPara {
+  -webkit-animation: fadeOutDown 1s both;
+  animation: fadeOutDown 1s both; }
+
+#section4 .bannerWrap .bannerInner .bannerRightContent .contentInner .teamContentWrap .TeamHeading {
+  -webkit-animation: fadeOutDown 1s both;
+  animation: fadeOutDown 1s both; }
+
+#section4 .bannerWrap .bannerInner .bannerRightContent .contentInner .teamContentWrap .teamRow_1 .temImg {
+  -webkit-animation: fadeOutDown 1s both;
+  animation: fadeOutDown 1s both; }
+
+#section4 .bannerWrap .bannerInner .bannerRightContent .contentInner .teamContentWrap .teamRow_1 .contentBox {
+  -webkit-animation: fadeOutDown 1s both;
+  animation: fadeOutDown 1s both; }
+
+#section4 .bannerWrap .bannerInner .bannerRightContent .contentInner .teamContentWrap .teamRow_2 .temImg {
+  -webkit-animation: fadeOutDown 1s both;
+  animation: fadeOutDown 1s both; }
+
+#section4 .bannerWrap .bannerInner .bannerRightContent .contentInner .teamContentWrap .teamRow_2 .contentBox {
+  -webkit-animation: fadeOutDown 1s both;
+  animation: fadeOutDown 1s both; }
+
+#section4.active .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l6 {
+  -webkit-animation: fadeInLeft 1s ease 1s both;
+  animation: fadeInLeft 1s ease 1s both; }
+
+#section4.active .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l5 {
+  -webkit-animation: fadeInLeft 1.2s ease 1.2s both;
+  animation: fadeInLeft 1.2s ease 1.2s both; }
+
+#section4.active .bannerWrap .bannerInner .bannerContent .contentInner .btnWrap .btnGlob.btn_1 {
+  -webkit-animation: fadeInUp 1.5s ease 1.5s both;
+  animation: fadeInUp 1.5s ease 1.5s both; }
+
+#section4.active .bannerWrap .bannerInner .bannerContent .contentInner .btnWrap .btnGlob.btn_2 {
+  -webkit-animation: fadeInUp 1.7s ease 1.7s both;
+  animation: fadeInUp 1.7s ease 1.7s both; }
+
+#section4.active .bannerWrap .bannerInner .bannerRightContent .contentInner .teamContentWrap .tTopPara {
+  -webkit-animation: fadeInDown .8s ease .8s both;
+  animation: fadeInDown .8s ease .8s both; }
+
+#section4.active .bannerWrap .bannerInner .bannerRightContent .contentInner .teamContentWrap .TeamHeading {
+  -webkit-animation: fadeInDown .9s ease .9s both;
+  animation: fadeInDown .9s ease .9s both; }
+
+#section4.active .bannerWrap .bannerInner .bannerRightContent .contentInner .teamContentWrap .teamRow_1 .temImg {
+  -webkit-animation: fadeInDown 1s ease 1s both;
+  animation: fadeInDown 1s ease 1s both; }
+
+#section4.active .bannerWrap .bannerInner .bannerRightContent .contentInner .teamContentWrap .teamRow_1 .contentBox {
+  -webkit-animation: fadeInDown 1.1s ease 1.1s both;
+  animation: fadeInDown 1.1s ease 1.1s both; }
+
+#section4.active .bannerWrap .bannerInner .bannerRightContent .contentInner .teamContentWrap .teamRow_2 .temImg {
+  -webkit-animation: fadeInDown 1.2s ease 1.2s both;
+  animation: fadeInDown 1.2s ease 1.2s both; }
+
+#section4.active .bannerWrap .bannerInner .bannerRightContent .contentInner .teamContentWrap .teamRow_2 .contentBox {
+  -webkit-animation: fadeInDown 1.3s ease 1.3s both;
+  animation: fadeInDown 1.3s ease 1.3s both; }
