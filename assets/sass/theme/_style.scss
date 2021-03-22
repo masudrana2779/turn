@@ -1126,15 +1126,25 @@
 }
 
 
-
-
 /* ---- grid ---- */
 
 
-.serviseSingleItem .singleItem {
-  margin-bottom: 30px;
-  float: left;
+.serviceImgWrap {
+  -count: 4;
+  -webkit-column-count: 4;
+  column-count: 4;
 }
-.serviseSingleItem img {
+
+.serviceImgWrap .singleItem .singleItemInner {
+}
+
+.serviceImgWrap .singleItem {
+  margin-bottom: 5px;
+  width: 100%;
+  padding: 5px 0;
+  display: inline-block;
+}
+
+.serviceImgWrap img {
   width: 100%;
 }
