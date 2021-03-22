@@ -43,10 +43,6 @@
         }
 
         roundTextContent('.circular-text1');
-        roundTextContent('.circular-text2');
-        roundTextContent('.circular-text3');
-        roundTextContent('.circular-text4');
-
         $('.resetTilt').tilt({
             reset: false
         })
@@ -80,7 +76,7 @@
         $('body').css({
             overflow: 'hidden',
             paddingRight: '17px'
-        });
+        }).addClass("pp-viewing-page1");
 
         function addClassbanner_1() {
             $('.allBody').fadeIn(1500);

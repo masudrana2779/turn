@@ -357,10 +357,21 @@
   margin-right: 100px;
 }
 
-.circleText {
+.circleTextBox {
   position: absolute;
-  top: 60px;
-  right: 0;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  z-index: 11;
+}
+
+.circleText {
+}
+
+.circleTextWrap {
+  position: relative;
+  width: 80px;
+  height: 80px;
   transition: all 0.5s;
 
   &:hover {
@@ -368,19 +379,13 @@
   }
 }
 
-.circleTextWrap {
-  position: relative;
-  width: 80px;
-  height: 80px;
-}
-
 .circleTextWrap:before {
   position: absolute;
   content: "";
   top: 50%;
   left: 50%;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   background: red;
   border-radius: 50%;
   transform: translate(-50%, -50%);
@@ -388,8 +393,14 @@
 
 .circular-text {
   position: relative;
-  color: #fff;
+  color: $dark;
   border-radius: 100%;
+}
+
+.pp-viewing-page1 {
+  .circular-text {
+    color: $white;
+  }
 }
 
 .textInner {
@@ -851,36 +862,47 @@
             .logoItem_1 {
               animation: fadeOutUp 1s both;
             }
+
             .logoItem_2 {
               animation: fadeOutUp 1s both;
             }
+
             .logoItem_3 {
               animation: fadeOutUp 1s both;
             }
+
             .logoItem_4 {
               animation: fadeOutUp 1s both;
             }
+
             .logoItem_5 {
               animation: fadeOutUp 1s both;
             }
+
             .logoItem_6 {
               animation: fadeOutUp 1s both;
             }
+
             .logoItem_7 {
               animation: fadeOutUp 1s both;
             }
+
             .logoItem_8 {
               animation: fadeOutUp 1s both;
             }
+
             .logoItem_9 {
               animation: fadeOutUp 1s both;
             }
+
             .logoItem_10 {
               animation: fadeOutUp 1s both;
             }
+
             .logoItem_11 {
               animation: fadeOutUp 1s both;
             }
+
             .logoItem_12 {
               animation: fadeOutUp 1s both;
             }
@@ -925,36 +947,47 @@
               .logoItem_1 {
                 animation: fadeInDown 0.5s ease 0.5s both;
               }
+
               .logoItem_2 {
                 animation: fadeInDown 0.6s ease 0.6s both;
               }
+
               .logoItem_3 {
                 animation: fadeInDown 0.7s ease 0.7s both;
               }
+
               .logoItem_4 {
                 animation: fadeInDown 0.8s ease 0.8s both;
               }
+
               .logoItem_5 {
                 animation: fadeInDown 0.9s ease 0.9s both;
               }
+
               .logoItem_6 {
                 animation: fadeInDown 1s ease 1s both;
               }
+
               .logoItem_7 {
                 animation: fadeInDown 1.1s ease 1.1s both;
               }
+
               .logoItem_8 {
                 animation: fadeInDown 1.2s ease 1.2s both;
               }
+
               .logoItem_9 {
                 animation: fadeInDown 1.3s ease 1.3s both;
               }
+
               .logoItem_10 {
                 animation: fadeInDown 1.4s ease 1.4s both;
               }
+
               .logoItem_11 {
                 animation: fadeInDown 1.5s ease 1.5s both;
               }
+
               .logoItem_12 {
                 animation: fadeInDown 1.6s ease 1.6s both;
               }
@@ -1009,6 +1042,7 @@
             .teamRow_1 .temImg {
               animation: fadeOutDown 1s both;
             }
+
             .teamRow_1 .contentBox {
               animation: fadeOutDown 1s both;
             }
@@ -1016,6 +1050,7 @@
             .teamRow_2 .temImg {
               animation: fadeOutDown 1s both;
             }
+
             .teamRow_2 .contentBox {
               animation: fadeOutDown 1s both;
             }
@@ -1069,6 +1104,7 @@
               .teamRow_1 .temImg {
                 animation: fadeInDown 1s ease 1s both;
               }
+
               .teamRow_1 .contentBox {
                 animation: fadeInDown 1.1s ease 1.1s both;
               }
@@ -1076,6 +1112,7 @@
               .teamRow_2 .temImg {
                 animation: fadeInDown 1.2s ease 1.2s both;
               }
+
               .teamRow_2 .contentBox {
                 animation: fadeInDown 1.3s ease 1.3s both;
               }
