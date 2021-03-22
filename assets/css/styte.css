@@ -845,3 +845,11 @@ ul {
 #section4.active .bannerWrap .bannerInner .bannerRightContent .contentInner .teamContentWrap .teamRow_2 .contentBox {
   -webkit-animation: fadeInDown 1.3s ease 1.3s both;
   animation: fadeInDown 1.3s ease 1.3s both; }
+
+/* ---- grid ---- */
+.serviseSingleItem .singleItem {
+  margin-bottom: 30px;
+  float: left; }
+
+.serviseSingleItem img {
+  width: 100%; }

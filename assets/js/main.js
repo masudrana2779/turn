@@ -4,6 +4,51 @@
 
     $(document).ready(function () {
 
+
+        /*===========Portfolio isotope js===========*/
+        function filTeTiSotOp() {
+            var $grid = $('.serviceImgWrap');
+            if ($grid.length) {
+                $grid.imagesLoaded(function () {
+                    $grid.isotope({
+                        itemSelector: '.serviseSingleItem',
+                        percentPosition: true,
+                        layoutMode: 'masonry',
+                        filter: "*",
+                        animationOptions: {
+                            duration: 1000
+                        },
+                        stagger: 0,
+                        transitionDuration: '0.9s',
+                        masonry: {
+                            // use outer width of grid-sizer for columnWidth
+                            columnWidth: 1
+                        }
+                    });
+                    $(".filter_menu li").on('click', function () {
+                        $(".filter_menu li").removeClass("active");
+                        $(this).addClass("active");
+
+                        var selector = $(this).attr("data-filter");
+                        $grid.isotope({
+                            filter: selector,
+                            animationOptions: {
+                                animationDuration: 750,
+                                easing: 'linear',
+                                queue: false,
+                            }
+                        });
+                        return false;
+                    });
+                });
+            }
+        }
+
+        filTeTiSotOp();
+
+    });
+    $(document).ready(function () {
+
         function roundTextContent(selector) {
 
             let degreeToRadian = (angle) => {
@@ -87,8 +132,6 @@
         setTimeout(function () {
             addClassbanner_1();
         }, 4000);
-
-
 
 
 
