@@ -76,8 +76,52 @@
       }
     }
 
-    .navbar-toggler {
 
+    .hamburger {
+      padding: 0;
+      outline: none;
+      outline: none;
+      box-shadow: none;
+      border: none;
+      .bar_icon {
+        width: 30px;
+        height: 16px;
+        position: relative;
+        display: inline-block;
+        .bar {
+          position: absolute;
+          width: 100%;
+          background: rgb(255, 255, 255);
+          height: 2px;
+          left: 0;
+          transition: all 0.5s;
+          &.bar_1 {
+            top: 0;
+          }
+          &.bar_2 {
+            top: 50%;
+            // transform: translateY(-50%);
+          }
+          &.bar_3 {
+            top: 100%;
+          }
+        }
+      }
+      &[aria-expanded="true"] {
+        .bar {
+          &.bar_1 {
+            top: 50%;
+            transform: rotate(45deg);
+          }
+          &.bar_2 {
+            opacity: 0;
+          }
+          &.bar_3 {
+            top: 50%;
+            transform: rotate(-45deg) translateY(-50%);
+          }
+        }
+      }
     }
 
     .mainMenu {
@@ -489,8 +533,8 @@
 
 .clientLogoWrap {
   .logoItem {
-    width: 140px;
-    height: 140px;
+    //width: 140px;
+    //height: 140px;
     border: 1px solid #ddd;
     display: flex;
     align-items: center;

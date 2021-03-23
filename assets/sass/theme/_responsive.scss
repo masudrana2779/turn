@@ -1,0 +1,46 @@
+@media (max-width: 1024px) {
+  .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle {
+    font-size: 80px;
+    line-height: 70px;
+  }
+  .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l2 {
+    font-size: 55px;
+  }
+  .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l3 {
+    font-size: 75px;
+  }
+  .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l4 {
+    font-size: 80px;
+  }
+  .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l5 {
+    font-size: 70px;
+  }
+  .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l6 {
+    font-size: 38px;
+  }
+  .video_bg #myVideo {
+    max-width: initial;
+  }
+  .btnWrap .btnGlob {
+    margin: 0 0 10px;
+  }
+}
+
+/*End @media (max-width: 1024px) */
+
+
+@media (max-width: 991px) {
+  .bannerWrap .bannerInner .tagTop {
+    display: none;
+  }
+  .circleText {
+    padding-top: 10px;
+    padding-right: 80px;
+  }
+  .header .navbar .mainMenu .navbar-nav {
+    padding-top: 10px;
+  }
+  .header .navbar .mainMenu {
+    background: #fff;
+  }
+}

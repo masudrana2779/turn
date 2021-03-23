@@ -130,6 +130,45 @@ ul {
     .header .navbar .logo a img {
       max-width: 60px;
       width: 100%; }
+    .header .navbar .hamburger {
+      padding: 0;
+      outline: none;
+      outline: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border: none; }
+      .header .navbar .hamburger .bar_icon {
+        width: 30px;
+        height: 16px;
+        position: relative;
+        display: inline-block; }
+        .header .navbar .hamburger .bar_icon .bar {
+          position: absolute;
+          width: 100%;
+          background: white;
+          height: 2px;
+          left: 0;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+          .header .navbar .hamburger .bar_icon .bar.bar_1 {
+            top: 0; }
+          .header .navbar .hamburger .bar_icon .bar.bar_2 {
+            top: 50%; }
+          .header .navbar .hamburger .bar_icon .bar.bar_3 {
+            top: 100%; }
+      .header .navbar .hamburger[aria-expanded="true"] .bar.bar_1 {
+        top: 50%;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg); }
+      .header .navbar .hamburger[aria-expanded="true"] .bar.bar_2 {
+        opacity: 0; }
+      .header .navbar .hamburger[aria-expanded="true"] .bar.bar_3 {
+        top: 50%;
+        -webkit-transform: rotate(-45deg) translateY(-50%);
+        -ms-transform: rotate(-45deg) translateY(-50%);
+        transform: rotate(-45deg) translateY(-50%); }
     .header .navbar .mainMenu .navbar-nav .nav-item .nav-link {
       font-size: 12px;
       font-weight: 700;
@@ -414,8 +453,6 @@ ul {
         margin-bottom: 10px; }
 
 .clientLogoWrap .logoItem {
-  width: 140px;
-  height: 140px;
   border: 1px solid #ddd;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -866,3 +903,34 @@ ul {
 
 .cus_pad {
   padding: 0 5px; }
+
+@media (max-width: 1024px) {
+  .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle {
+    font-size: 80px;
+    line-height: 70px; }
+  .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l2 {
+    font-size: 55px; }
+  .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l3 {
+    font-size: 75px; }
+  .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l4 {
+    font-size: 80px; }
+  .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l5 {
+    font-size: 70px; }
+  .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l6 {
+    font-size: 38px; }
+  .video_bg #myVideo {
+    max-width: initial; }
+  .btnWrap .btnGlob {
+    margin: 0 0 10px; } }
+
+/*End @media (max-width: 1024px) */
+@media (max-width: 991px) {
+  .bannerWrap .bannerInner .tagTop {
+    display: none; }
+  .circleText {
+    padding-top: 10px;
+    padding-right: 80px; }
+  .header .navbar .mainMenu .navbar-nav {
+    padding-top: 10px; }
+  .header .navbar .mainMenu {
+    background: #fff; } }
