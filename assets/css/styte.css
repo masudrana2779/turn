@@ -538,6 +538,10 @@ ul {
   -webkit-animation: fadeOutUp 1s both;
   animation: fadeOutUp 1s both; }
 
+#section1 .bannerWrap .bannerInner .bannerRightContent .contentInner .contentInnerInner .roundShapeImg img {
+  -webkit-animation: fadeOutDown 1s both;
+  animation: fadeOutDown 1s both; }
+
 #section1 .bannerWrap .bannerInner .bannerRightContent .contentInner .contentInnerInner .bannerRightSingleText h5 {
   -webkit-animation: fadeOutDown 1s both;
   animation: fadeOutDown 1s both; }
@@ -565,6 +569,10 @@ ul {
 #section1.active .bannerWrap .bannerInner .bannerContent .contentInner .btnWrap .btnGlob.btn_2 {
   -webkit-animation: fadeInUp 1.7s ease 1.7s both;
   animation: fadeInUp 1.7s ease 1.7s both; }
+
+#section1.active .bannerWrap .bannerInner .bannerRightContent .contentInner .contentInnerInner .roundShapeImg img {
+  -webkit-animation: tada 1.9s ease 1.5s both;
+  animation: tada 1.9s ease 1.5s both; }
 
 #section1.active .bannerWrap .bannerInner .bannerRightContent .contentInner .contentInnerInner .bannerRightSingleText h5 {
   -webkit-animation: fadeInDown 1s ease 1s both;
@@ -847,16 +855,14 @@ ul {
   animation: fadeInDown 1.3s ease 1.3s both; }
 
 /* ---- grid ---- */
-.serviceImgWrap {
-  -count: 4;
-  -webkit-column-count: 4;
-  column-count: 4; }
-
 .serviceImgWrap .singleItem {
-  margin-bottom: 5px;
-  width: 100%;
-  padding: 5px 0;
-  display: inline-block; }
+  margin-bottom: 10px; }
 
 .serviceImgWrap img {
   width: 100%; }
+
+.cus_mar {
+  margin: 0 -5px; }
+
+.cus_pad {
+  padding: 0 5px; }

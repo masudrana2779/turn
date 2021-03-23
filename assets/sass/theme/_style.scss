@@ -648,6 +648,11 @@
       .bannerRightContent {
         .contentInner {
           .contentInnerInner {
+            .roundShapeImg {
+              img {
+                animation: fadeOutDown 1s both;
+              }
+            }
             .bannerRightSingleText {
               h5 {
                 animation: fadeOutDown 1s both;
@@ -700,6 +705,11 @@
         .bannerRightContent {
           .contentInner {
             .contentInnerInner {
+              .roundShapeImg {
+                img {
+                  animation: tada 1.9s ease 1.5s both;
+                }
+              }
               .bannerRightSingleText {
                 h5 {
                   animation: fadeInDown 1s ease 1s both;
@@ -1130,21 +1140,27 @@
 
 
 .serviceImgWrap {
-  -count: 4;
-  -webkit-column-count: 4;
-  column-count: 4;
+  //-count: 4;
+  //-webkit-column-count: 4;
+  //column-count: 4;
 }
 
 .serviceImgWrap .singleItem .singleItemInner {
 }
 
 .serviceImgWrap .singleItem {
-  margin-bottom: 5px;
-  width: 100%;
-  padding: 5px 0;
-  display: inline-block;
+  margin-bottom: 10px;
+  //width: 100%;
+  //padding: 5px 0;
+  //display: inline-block;
 }
 
 .serviceImgWrap img {
   width: 100%;
+}
+.cus_mar {
+  margin: 0 -5px;
+}
+.cus_pad {
+  padding: 0 5px;
 }
