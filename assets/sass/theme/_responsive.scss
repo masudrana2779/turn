@@ -43,4 +43,95 @@
   .header .navbar .mainMenu {
     background: #fff;
   }
+  .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l6 {
+    font-size: 34px;
+  }
+  .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l5 {
+    font-size: 60px;
+  }
+  .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l4 {
+    font-size: 70px;
+  }
+  .teamContentWrap .teamSingleItemRow.teamRev {
+    flex-direction: column-reverse;
+  }
 }
+
+/*End @media (max-width: 991px) */
+
+
+@media (max-width: 767px) {
+  html, body {
+    overflow: initial;
+  }
+  #pagepiling .section {
+    height: auto;
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+  .circleTextBox {
+    top: 0;
+  }
+  .circular-text {
+    color: #fff;
+  }
+  .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle {
+    font-size: 50px;
+    line-height: 40px;
+  }
+  .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l2 {
+    font-size: 35px;
+  }
+  .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l3 {
+    font-size: 40px;
+  }
+  .btnWrap .btnGlob {
+    width: 150px;
+    margin: 0 10px 10px 0;
+  }
+  .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l4 {
+    font-size: 45px;
+  }
+  .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle .l5 {
+    font-size: 40px;
+  }
+  .portfolioAccordion .portfolioAccordionItem {
+    text-align: center;
+  }
+  .portfolioAccordion .portfolioAccordionItem .accordion-header .accordion-button .btnItem {
+    margin: 0 auto;
+  }
+  .portfolioAccordion .portfolioAccordionSingleItem {
+    display: flex;
+    justify-content: center;
+  }
+  .h100 {
+    height: auto;
+  }
+  .bannerWrap {
+    min-height: auto;
+  }
+  .bannerWrap.banner_1 {
+    padding: 70px 0  30px;
+  }
+  .bannerContent {
+    padding: 40px 0 0;
+  }
+  .bannerWrap .bannerInner .bannerContent .contentInner .roundShapeImg img {
+    max-width: 170px;
+  }
+  .bannerWrap .bannerInner {
+    padding: 0;
+  }
+  header.header.fixdHeader {
+    background: #fff;
+    padding: 10px 0;
+    box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+  }
+  .header.fixdHeader .navbar .hamburger .bar_icon .bar {
+    background: #222;
+  }
+}
+
+/*End @media (max-width: 767px) */

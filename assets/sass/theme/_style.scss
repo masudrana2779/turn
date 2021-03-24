@@ -83,11 +83,13 @@
       outline: none;
       box-shadow: none;
       border: none;
+
       .bar_icon {
         width: 30px;
         height: 16px;
         position: relative;
         display: inline-block;
+
         .bar {
           position: absolute;
           width: 100%;
@@ -95,27 +97,33 @@
           height: 2px;
           left: 0;
           transition: all 0.5s;
+
           &.bar_1 {
             top: 0;
           }
+
           &.bar_2 {
             top: 50%;
             // transform: translateY(-50%);
           }
+
           &.bar_3 {
             top: 100%;
           }
         }
       }
+
       &[aria-expanded="true"] {
         .bar {
           &.bar_1 {
             top: 50%;
             transform: rotate(45deg);
           }
+
           &.bar_2 {
             opacity: 0;
           }
+
           &.bar_3 {
             top: 50%;
             transform: rotate(-45deg) translateY(-50%);
@@ -158,7 +166,6 @@
   height: 100%;
   z-index: -1;
   overflow: hidden;
-  padding-right: 17px;
 
   &:before {
     position: absolute;
@@ -627,6 +634,8 @@
   }
 
   .temImg {
+    margin-bottom: 20px;
+
     .imgInner {
       max-width: 200px;
       width: 100%;
@@ -656,64 +665,537 @@
   }
 }
 
-#section1 {
-  .bannerWrap {
-    .bannerInner {
-      .bannerContent {
-        .contentInner {
-          .bannerTitle {
-            .l1 {
-              animation: fadeOutRight 1s both;
-            }
+/* =======  animation css */
 
-            .l2 {
-              animation: fadeOutRight 1s both;
-            }
-
-            .l3 {
-              animation: fadeOutRight 1s both;
-            }
-          }
-
-          .btnWrap {
-            .btnGlob {
-              &.btn_1 {
-                animation: fadeOutUp 1s both;
+@media (min-width: 768px) {
+  #section1 {
+    .bannerWrap {
+      .bannerInner {
+        .bannerContent {
+          .contentInner {
+            .bannerTitle {
+              .l1 {
+                animation: fadeOutRight 1s both;
               }
 
-              &.btn_2 {
-                animation: fadeOutUp 1s both;
+              .l2 {
+                animation: fadeOutRight 1s both;
+              }
+
+              .l3 {
+                animation: fadeOutRight 1s both;
+              }
+            }
+
+            .btnWrap {
+              .btnGlob {
+                &.btn_1 {
+                  animation: fadeOutUp 1s both;
+                }
+
+                &.btn_2 {
+                  animation: fadeOutUp 1s both;
+                }
               }
             }
           }
         }
-      }
 
-      .bannerRightContent {
-        .contentInner {
-          .contentInnerInner {
-            .roundShapeImg {
-              img {
-                animation: fadeOutDown 1s both;
+        .bannerRightContent {
+          .contentInner {
+            .contentInnerInner {
+              .roundShapeImg {
+                img {
+                  animation: fadeOutDown 1s both;
+                }
+              }
+
+              .bannerRightSingleText {
+                h5 {
+                  animation: fadeOutDown 1s both;
+                }
+
+                p {
+                  animation: fadeOutDown 1s both;
+                }
               }
             }
-            .bannerRightSingleText {
-              h5 {
-                animation: fadeOutDown 1s both;
+
+          }
+        }
+      }
+    }
+
+    &.active {
+      .bannerWrap {
+        .bannerInner {
+          .bannerContent {
+            .contentInner {
+              .bannerTitle {
+                .l1 {
+                  animation: fadeInLeft 1s ease 1s both;
+                }
+
+                .l2 {
+                  animation: fadeInLeft 1.2s ease 1.2s both;
+                }
+
+                .l3 {
+                  animation: fadeInLeft 1.3s ease 1.3s both;
+                }
               }
 
-              p {
-                animation: fadeOutDown 1s both;
+              .btnWrap {
+                .btnGlob {
+                  &.btn_1 {
+                    animation: fadeInUp 1.5s ease 1.5s both;
+                  }
+
+                  &.btn_2 {
+                    animation: fadeInUp 1.7s ease 1.7s both;
+                  }
+                }
               }
             }
           }
 
+          .bannerRightContent {
+            .contentInner {
+              .contentInnerInner {
+                .roundShapeImg {
+                  img {
+                    animation: tada 1.9s ease 1.5s both;
+                  }
+                }
+
+                .bannerRightSingleText {
+                  h5 {
+                    animation: fadeInDown 1s ease 1s both;
+                  }
+
+                  p {
+                    animation: fadeInDown 1.2s ease 1.2s both;
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
   }
 
-  &.active {
+  #section2 {
+    .bannerWrap {
+      .bannerInner {
+        .bannerContent {
+          .contentInner {
+            .bannerTitle {
+              .l4 {
+                animation: fadeOutRight 1s both;
+              }
+
+              .l5 {
+                animation: fadeOutRight 1s both;
+              }
+            }
+
+            .btnWrap {
+              .btnGlob {
+                &.btn_1 {
+                  animation: fadeOutUp 1s both;
+                }
+
+                &.btn_2 {
+                  animation: fadeOutUp 1s both;
+                }
+              }
+            }
+          }
+        }
+
+        .bannerRightContent {
+          .contentInner {
+            .portfolioAccordion {
+              .portfolioAccordion_1 {
+                animation: fadeOutDown 1s both;
+              }
+
+              .portfolioAccordion_2 {
+                animation: fadeOutDown 1s both;
+              }
+
+              .portfolioAccordion_3 {
+                animation: fadeOutDown 1s both;
+              }
+
+              .portfolioAccordion_4 {
+                animation: fadeOutDown 1s both;
+              }
+            }
+
+          }
+        }
+      }
+    }
+
+    &.active {
+      .bannerWrap {
+        .bannerInner {
+          .bannerContent {
+            .contentInner {
+              .bannerTitle {
+                .l4 {
+                  animation: fadeInLeft 1s ease 1s both;
+                }
+
+                .l5 {
+                  animation: fadeInLeft 1.2s ease 1.2s both;
+                }
+              }
+
+              .btnWrap {
+                .btnGlob {
+                  &.btn_1 {
+                    animation: fadeInUp 1.5s ease 1.5s both;
+                  }
+
+                  &.btn_2 {
+                    animation: fadeInUp 1.7s ease 1.7s both;
+                  }
+                }
+              }
+            }
+          }
+
+          .bannerRightContent {
+            .contentInner {
+              .portfolioAccordion {
+                .portfolioAccordion_1 {
+                  animation: fadeInDown 1s ease 1s both;
+                }
+
+                .portfolioAccordion_2 {
+                  animation: fadeInDown 1.1s ease 1.1s both;
+                }
+
+                .portfolioAccordion_3 {
+                  animation: fadeInDown 1.2s ease 1.2s both;
+                }
+
+                .portfolioAccordion_4 {
+                  animation: fadeInDown 1.3s ease 1.3s both;
+                }
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #section3 {
+    .bannerWrap {
+      .bannerInner {
+        .bannerContent {
+          .contentInner {
+            .bannerTitle {
+              .l6 {
+                animation: fadeOutRight 1s both;
+              }
+
+              .l5 {
+                animation: fadeOutRight 1s both;
+              }
+            }
+
+            .btnWrap {
+              .btnGlob {
+                &.btn_1 {
+                  animation: fadeOutUp 1s both;
+                }
+
+                &.btn_2 {
+                  animation: fadeOutUp 1s both;
+                }
+              }
+            }
+          }
+        }
+
+        .bannerRightContent {
+          .contentInner {
+            .clientLogoWrap {
+              .logoItem_1 {
+                animation: fadeOutUp 1s both;
+              }
+
+              .logoItem_2 {
+                animation: fadeOutUp 1s both;
+              }
+
+              .logoItem_3 {
+                animation: fadeOutUp 1s both;
+              }
+
+              .logoItem_4 {
+                animation: fadeOutUp 1s both;
+              }
+
+              .logoItem_5 {
+                animation: fadeOutUp 1s both;
+              }
+
+              .logoItem_6 {
+                animation: fadeOutUp 1s both;
+              }
+
+              .logoItem_7 {
+                animation: fadeOutUp 1s both;
+              }
+
+              .logoItem_8 {
+                animation: fadeOutUp 1s both;
+              }
+
+              .logoItem_9 {
+                animation: fadeOutUp 1s both;
+              }
+
+              .logoItem_10 {
+                animation: fadeOutUp 1s both;
+              }
+
+              .logoItem_11 {
+                animation: fadeOutUp 1s both;
+              }
+
+              .logoItem_12 {
+                animation: fadeOutUp 1s both;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.active {
+      .bannerWrap {
+        .bannerInner {
+          .bannerContent {
+            .contentInner {
+              .bannerTitle {
+                .l6 {
+                  animation: fadeInLeft 1s ease 1s both;
+                }
+
+                .l5 {
+                  animation: fadeInLeft 1.2s ease 1.2s both;
+                }
+              }
+
+              .btnWrap {
+                .btnGlob {
+                  &.btn_1 {
+                    animation: fadeInUp 1.5s ease 1.5s both;
+                  }
+
+                  &.btn_2 {
+                    animation: fadeInUp 1.7s ease 1.7s both;
+                  }
+                }
+              }
+            }
+          }
+
+          .bannerRightContent {
+            .contentInner {
+              .clientLogoWrap {
+                .logoItem_1 {
+                  animation: fadeInDown 0.5s ease 0.5s both;
+                }
+
+                .logoItem_2 {
+                  animation: fadeInDown 0.6s ease 0.6s both;
+                }
+
+                .logoItem_3 {
+                  animation: fadeInDown 0.7s ease 0.7s both;
+                }
+
+                .logoItem_4 {
+                  animation: fadeInDown 0.8s ease 0.8s both;
+                }
+
+                .logoItem_5 {
+                  animation: fadeInDown 0.9s ease 0.9s both;
+                }
+
+                .logoItem_6 {
+                  animation: fadeInDown 1s ease 1s both;
+                }
+
+                .logoItem_7 {
+                  animation: fadeInDown 1.1s ease 1.1s both;
+                }
+
+                .logoItem_8 {
+                  animation: fadeInDown 1.2s ease 1.2s both;
+                }
+
+                .logoItem_9 {
+                  animation: fadeInDown 1.3s ease 1.3s both;
+                }
+
+                .logoItem_10 {
+                  animation: fadeInDown 1.4s ease 1.4s both;
+                }
+
+                .logoItem_11 {
+                  animation: fadeInDown 1.5s ease 1.5s both;
+                }
+
+                .logoItem_12 {
+                  animation: fadeInDown 1.6s ease 1.6s both;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #section4 {
+    .bannerWrap {
+      .bannerInner {
+        .bannerContent {
+          .contentInner {
+            .bannerTitle {
+              .l6 {
+                animation: fadeOutRight 1s both;
+              }
+
+              .l5 {
+                animation: fadeOutRight 1s both;
+              }
+            }
+
+            .btnWrap {
+              .btnGlob {
+                &.btn_1 {
+                  animation: fadeOutUp 1s both;
+                }
+
+                &.btn_2 {
+                  animation: fadeOutUp 1s both;
+                }
+              }
+            }
+          }
+        }
+
+        .bannerRightContent {
+          .contentInner {
+            .teamContentWrap {
+              .tTopPara {
+                animation: fadeOutDown 1s both;
+              }
+
+              .TeamHeading {
+                animation: fadeOutDown 1s both;
+              }
+
+              .teamRow_1 .temImg {
+                animation: fadeOutDown 1s both;
+              }
+
+              .teamRow_1 .contentBox {
+                animation: fadeOutDown 1s both;
+              }
+
+              .teamRow_2 .temImg {
+                animation: fadeOutDown 1s both;
+              }
+
+              .teamRow_2 .contentBox {
+                animation: fadeOutDown 1s both;
+              }
+            }
+
+          }
+        }
+      }
+    }
+
+    &.active {
+      .bannerWrap {
+        .bannerInner {
+          .bannerContent {
+            .contentInner {
+              .bannerTitle {
+                .l6 {
+                  animation: fadeInLeft 1s ease 1s both;
+                }
+
+                .l5 {
+                  animation: fadeInLeft 1.2s ease 1.2s both;
+                }
+              }
+
+              .btnWrap {
+                .btnGlob {
+                  &.btn_1 {
+                    animation: fadeInUp 1.5s ease 1.5s both;
+                  }
+
+                  &.btn_2 {
+                    animation: fadeInUp 1.7s ease 1.7s both;
+                  }
+                }
+              }
+            }
+          }
+
+          .bannerRightContent {
+            .contentInner {
+              .teamContentWrap {
+                .tTopPara {
+                  animation: fadeInDown .8s ease .8s both;
+                }
+
+                .TeamHeading {
+                  animation: fadeInDown .9s ease .9s both;
+                }
+
+                .teamRow_1 .temImg {
+                  animation: fadeInDown 1s ease 1s both;
+                }
+
+                .teamRow_1 .contentBox {
+                  animation: fadeInDown 1.1s ease 1.1s both;
+                }
+
+                .teamRow_2 .temImg {
+                  animation: fadeInDown 1.2s ease 1.2s both;
+                }
+
+                .teamRow_2 .contentBox {
+                  animation: fadeInDown 1.3s ease 1.3s both;
+                }
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #section1 {
     .bannerWrap {
       .bannerInner {
         .bannerContent {
@@ -754,6 +1236,7 @@
                   animation: tada 1.9s ease 1.5s both;
                 }
               }
+
               .bannerRightSingleText {
                 h5 {
                   animation: fadeInDown 1s ease 1s both;
@@ -771,413 +1254,7 @@
   }
 }
 
-#section2 {
-  .bannerWrap {
-    .bannerInner {
-      .bannerContent {
-        .contentInner {
-          .bannerTitle {
-            .l4 {
-              animation: fadeOutRight 1s both;
-            }
-
-            .l5 {
-              animation: fadeOutRight 1s both;
-            }
-          }
-
-          .btnWrap {
-            .btnGlob {
-              &.btn_1 {
-                animation: fadeOutUp 1s both;
-              }
-
-              &.btn_2 {
-                animation: fadeOutUp 1s both;
-              }
-            }
-          }
-        }
-      }
-
-      .bannerRightContent {
-        .contentInner {
-          .portfolioAccordion {
-            .portfolioAccordion_1 {
-              animation: fadeOutDown 1s both;
-            }
-
-            .portfolioAccordion_2 {
-              animation: fadeOutDown 1s both;
-            }
-
-            .portfolioAccordion_3 {
-              animation: fadeOutDown 1s both;
-            }
-
-            .portfolioAccordion_4 {
-              animation: fadeOutDown 1s both;
-            }
-          }
-
-        }
-      }
-    }
-  }
-
-  &.active {
-    .bannerWrap {
-      .bannerInner {
-        .bannerContent {
-          .contentInner {
-            .bannerTitle {
-              .l4 {
-                animation: fadeInLeft 1s ease 1s both;
-              }
-
-              .l5 {
-                animation: fadeInLeft 1.2s ease 1.2s both;
-              }
-            }
-
-            .btnWrap {
-              .btnGlob {
-                &.btn_1 {
-                  animation: fadeInUp 1.5s ease 1.5s both;
-                }
-
-                &.btn_2 {
-                  animation: fadeInUp 1.7s ease 1.7s both;
-                }
-              }
-            }
-          }
-        }
-
-        .bannerRightContent {
-          .contentInner {
-            .portfolioAccordion {
-              .portfolioAccordion_1 {
-                animation: fadeInDown 1s ease 1s both;
-              }
-
-              .portfolioAccordion_2 {
-                animation: fadeInDown 1.1s ease 1.1s both;
-              }
-
-              .portfolioAccordion_3 {
-                animation: fadeInDown 1.2s ease 1.2s both;
-              }
-
-              .portfolioAccordion_4 {
-                animation: fadeInDown 1.3s ease 1.3s both;
-              }
-            }
-
-          }
-        }
-      }
-    }
-  }
-}
-
-#section3 {
-  .bannerWrap {
-    .bannerInner {
-      .bannerContent {
-        .contentInner {
-          .bannerTitle {
-            .l6 {
-              animation: fadeOutRight 1s both;
-            }
-
-            .l5 {
-              animation: fadeOutRight 1s both;
-            }
-          }
-
-          .btnWrap {
-            .btnGlob {
-              &.btn_1 {
-                animation: fadeOutUp 1s both;
-              }
-
-              &.btn_2 {
-                animation: fadeOutUp 1s both;
-              }
-            }
-          }
-        }
-      }
-
-      .bannerRightContent {
-        .contentInner {
-          .clientLogoWrap {
-            .logoItem_1 {
-              animation: fadeOutUp 1s both;
-            }
-
-            .logoItem_2 {
-              animation: fadeOutUp 1s both;
-            }
-
-            .logoItem_3 {
-              animation: fadeOutUp 1s both;
-            }
-
-            .logoItem_4 {
-              animation: fadeOutUp 1s both;
-            }
-
-            .logoItem_5 {
-              animation: fadeOutUp 1s both;
-            }
-
-            .logoItem_6 {
-              animation: fadeOutUp 1s both;
-            }
-
-            .logoItem_7 {
-              animation: fadeOutUp 1s both;
-            }
-
-            .logoItem_8 {
-              animation: fadeOutUp 1s both;
-            }
-
-            .logoItem_9 {
-              animation: fadeOutUp 1s both;
-            }
-
-            .logoItem_10 {
-              animation: fadeOutUp 1s both;
-            }
-
-            .logoItem_11 {
-              animation: fadeOutUp 1s both;
-            }
-
-            .logoItem_12 {
-              animation: fadeOutUp 1s both;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  &.active {
-    .bannerWrap {
-      .bannerInner {
-        .bannerContent {
-          .contentInner {
-            .bannerTitle {
-              .l6 {
-                animation: fadeInLeft 1s ease 1s both;
-              }
-
-              .l5 {
-                animation: fadeInLeft 1.2s ease 1.2s both;
-              }
-            }
-
-            .btnWrap {
-              .btnGlob {
-                &.btn_1 {
-                  animation: fadeInUp 1.5s ease 1.5s both;
-                }
-
-                &.btn_2 {
-                  animation: fadeInUp 1.7s ease 1.7s both;
-                }
-              }
-            }
-          }
-        }
-
-        .bannerRightContent {
-          .contentInner {
-            .clientLogoWrap {
-              .logoItem_1 {
-                animation: fadeInDown 0.5s ease 0.5s both;
-              }
-
-              .logoItem_2 {
-                animation: fadeInDown 0.6s ease 0.6s both;
-              }
-
-              .logoItem_3 {
-                animation: fadeInDown 0.7s ease 0.7s both;
-              }
-
-              .logoItem_4 {
-                animation: fadeInDown 0.8s ease 0.8s both;
-              }
-
-              .logoItem_5 {
-                animation: fadeInDown 0.9s ease 0.9s both;
-              }
-
-              .logoItem_6 {
-                animation: fadeInDown 1s ease 1s both;
-              }
-
-              .logoItem_7 {
-                animation: fadeInDown 1.1s ease 1.1s both;
-              }
-
-              .logoItem_8 {
-                animation: fadeInDown 1.2s ease 1.2s both;
-              }
-
-              .logoItem_9 {
-                animation: fadeInDown 1.3s ease 1.3s both;
-              }
-
-              .logoItem_10 {
-                animation: fadeInDown 1.4s ease 1.4s both;
-              }
-
-              .logoItem_11 {
-                animation: fadeInDown 1.5s ease 1.5s both;
-              }
-
-              .logoItem_12 {
-                animation: fadeInDown 1.6s ease 1.6s both;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-#section4 {
-  .bannerWrap {
-    .bannerInner {
-      .bannerContent {
-        .contentInner {
-          .bannerTitle {
-            .l6 {
-              animation: fadeOutRight 1s both;
-            }
-
-            .l5 {
-              animation: fadeOutRight 1s both;
-            }
-          }
-
-          .btnWrap {
-            .btnGlob {
-              &.btn_1 {
-                animation: fadeOutUp 1s both;
-              }
-
-              &.btn_2 {
-                animation: fadeOutUp 1s both;
-              }
-            }
-          }
-        }
-      }
-
-      .bannerRightContent {
-        .contentInner {
-          .teamContentWrap {
-            .tTopPara {
-              animation: fadeOutDown 1s both;
-            }
-
-            .TeamHeading {
-              animation: fadeOutDown 1s both;
-            }
-
-            .teamRow_1 .temImg {
-              animation: fadeOutDown 1s both;
-            }
-
-            .teamRow_1 .contentBox {
-              animation: fadeOutDown 1s both;
-            }
-
-            .teamRow_2 .temImg {
-              animation: fadeOutDown 1s both;
-            }
-
-            .teamRow_2 .contentBox {
-              animation: fadeOutDown 1s both;
-            }
-          }
-
-        }
-      }
-    }
-  }
-
-  &.active {
-    .bannerWrap {
-      .bannerInner {
-        .bannerContent {
-          .contentInner {
-            .bannerTitle {
-              .l6 {
-                animation: fadeInLeft 1s ease 1s both;
-              }
-
-              .l5 {
-                animation: fadeInLeft 1.2s ease 1.2s both;
-              }
-            }
-
-            .btnWrap {
-              .btnGlob {
-                &.btn_1 {
-                  animation: fadeInUp 1.5s ease 1.5s both;
-                }
-
-                &.btn_2 {
-                  animation: fadeInUp 1.7s ease 1.7s both;
-                }
-              }
-            }
-          }
-        }
-
-        .bannerRightContent {
-          .contentInner {
-            .teamContentWrap {
-              .tTopPara {
-                animation: fadeInDown .8s ease .8s both;
-              }
-
-              .TeamHeading {
-                animation: fadeInDown .9s ease .9s both;
-              }
-
-              .teamRow_1 .temImg {
-                animation: fadeInDown 1s ease 1s both;
-              }
-
-              .teamRow_1 .contentBox {
-                animation: fadeInDown 1.1s ease 1.1s both;
-              }
-
-              .teamRow_2 .temImg {
-                animation: fadeInDown 1.2s ease 1.2s both;
-              }
-
-              .teamRow_2 .contentBox {
-                animation: fadeInDown 1.3s ease 1.3s both;
-              }
-            }
-
-          }
-        }
-      }
-    }
-  }
-}
+/* =======  animation css */
 
 
 /* ---- grid ---- */
@@ -1202,9 +1279,15 @@
 .serviceImgWrap img {
   width: 100%;
 }
+
 .cus_mar {
   margin: 0 -5px;
 }
+
 .cus_pad {
   padding: 0 5px;
+}
+
+.teamSingleItemRow {
+  width: 100%;
 }
