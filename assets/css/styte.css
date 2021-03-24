@@ -839,6 +839,9 @@ ul {
 
 /* =======  animation css */
 /* ---- grid ---- */
+.serviceImgWrap .singleItem .singleItemInner a {
+  width: 100%; }
+
 .serviceImgWrap .singleItem {
   margin-bottom: 10px; }
 
