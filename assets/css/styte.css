@@ -857,6 +857,10 @@ ul {
 .teamSingleItemRow {
   width: 100%; }
 
+.imagelightbox-arrow {
+  background: transparent !important;
+  color: #23374D; }
+
 @media (max-width: 1024px) {
   .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle {
     font-size: 80px;
