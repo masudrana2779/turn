@@ -209,6 +209,16 @@
   //    left: 0;
   //  }
   //}
+  .bgShape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
 
   &.banner_2 {
     background: url("../../assets/img/5C2C23FE.jpg") no-repeat scroll top left / cover;
@@ -444,7 +454,7 @@
 
 .circular-text {
   position: relative;
-  color: $dark;
+  color: #999;
   border-radius: 100%;
 }
 
@@ -549,6 +559,7 @@
     margin: 0 auto 20px;
     padding: 10px;
     cursor: pointer;
+    pointer-events: none;
 
     .logoInner {
       img {
@@ -1292,7 +1303,71 @@
 .teamSingleItemRow {
   width: 100%;
 }
+
 .imagelightbox-arrow {
   background: transparent !important;
   color: $dark;
+}
+
+.galleryWrap {
+  .galleryTitle {
+    font-size: 32px;
+    color: #b6b6b6;
+    font-weight: 800;
+    line-height: 48px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #b6b6b6;
+  }
+
+
+  .galleryItem {
+    margin-bottom: 70px;
+
+    .galleryItemInner {
+      .galleryImg {
+        a {
+          width: 100%;
+          overflow: hidden;
+          border-radius: 15px;
+          position: relative;
+
+          &:before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            opacity: 0.1;
+            z-index: 1;
+          }
+
+          img {
+            width: 100%;
+            transition: all 0.5s;
+          }
+
+          &:hover {
+            img {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.imagelightbox-overlay {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.imagelightbox-arrow {
+  background: #666 !important;
+  border-radius: 50%;
+  color: #fff;
+  width: 40px;
+  height: 40px;
 }

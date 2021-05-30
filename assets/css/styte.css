@@ -65,6 +65,15 @@ ul {
   padding: 0;
   list-style: none; }
 
+.galleryRow {
+  margin: 0 -35px; }
+
+.galleryCol {
+  padding: 0 35px; }
+
+.galleryBody.bannerWrap {
+  background: #333; }
+
 /* ======================================          Global style                 ==================================== */
 .h100 {
   height: 100vh; }
@@ -212,6 +221,13 @@ ul {
   min-height: 100vh;
   height: auto;
   width: 100% !important; }
+  .bannerWrap .bgShape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; }
+    .bannerWrap .bgShape img {
+      width: 100%; }
   .bannerWrap.banner_2 {
     background: url("../../assets/img/5C2C23FE.jpg") no-repeat scroll top left/cover; }
   .bannerWrap.banner_3 {
@@ -381,7 +397,7 @@ ul {
 
 .circular-text {
   position: relative;
-  color: #23374D;
+  color: #999;
   border-radius: 100%; }
 
 .pp-viewing-page1 .circular-text {
@@ -464,7 +480,8 @@ ul {
   justify-content: center;
   margin: 0 auto 20px;
   padding: 10px;
-  cursor: pointer; }
+  cursor: pointer;
+  pointer-events: none; }
 
 .scrollDownAnimationWrap {
   background: rgba(0, 0, 0, 0.3);
@@ -860,6 +877,52 @@ ul {
 .imagelightbox-arrow {
   background: transparent !important;
   color: #23374D; }
+
+.galleryWrap .galleryTitle {
+  font-size: 32px;
+  color: #b6b6b6;
+  font-weight: 800;
+  line-height: 48px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #b6b6b6; }
+
+.galleryWrap .galleryItem {
+  margin-bottom: 70px; }
+  .galleryWrap .galleryItem .galleryItemInner .galleryImg a {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative; }
+    .galleryWrap .galleryItem .galleryItemInner .galleryImg a:before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      opacity: 0.1;
+      z-index: 1; }
+    .galleryWrap .galleryItem .galleryItemInner .galleryImg a img {
+      width: 100%;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+    .galleryWrap .galleryItem .galleryItemInner .galleryImg a:hover img {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1); }
+
+.imagelightbox-overlay {
+  background: rgba(0, 0, 0, 0.9); }
+
+.imagelightbox-arrow {
+  background: #666 !important;
+  border-radius: 50%;
+  color: #fff;
+  width: 40px;
+  height: 40px; }
 
 @media (max-width: 1024px) {
   .bannerWrap .bannerInner .bannerContent .contentInner .bannerTitle {
