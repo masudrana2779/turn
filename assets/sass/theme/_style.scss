@@ -214,6 +214,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
+    animation: fadeOutDown 1s both;
 
     img {
       width: 100%;
@@ -852,6 +853,9 @@
 
     &.active {
       .bannerWrap {
+        .bgShape {
+          animation: fadeInUp 1s ease 1s both;
+        }
         .bannerInner {
           .bannerContent {
             .contentInner {
