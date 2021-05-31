@@ -1081,7 +1081,8 @@ ul {
     height: auto;
     display: block;
     opacity: 1;
-    visibility: visible; }
+    visibility: visible;
+    overflow: hidden; }
   .circleTextBox {
     top: 0; }
   .circular-text {
@@ -1116,9 +1117,15 @@ ul {
   .bannerWrap {
     min-height: auto; }
   .bannerWrap.banner_1 {
-    padding: 70px 0  30px; }
+    padding: 70px 0 30px; }
   .bannerContent {
-    padding: 40px 0 0; }
+    padding: 40px 0; }
+  .galleryRow {
+    margin: 0 -15px; }
+  .galleryCol {
+    padding: 0 15px; }
+  .galleryWrap .galleryItem {
+    margin-bottom: 30px; }
   .bannerWrap .bannerInner .bannerContent .contentInner .roundShapeImg img {
     max-width: 170px; }
   .bannerWrap .bannerInner {

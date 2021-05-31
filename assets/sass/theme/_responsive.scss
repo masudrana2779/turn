@@ -69,6 +69,7 @@
     display: block;
     opacity: 1;
     visibility: visible;
+    overflow: hidden;
   }
   .circleTextBox {
     top: 0;
@@ -113,10 +114,19 @@
     min-height: auto;
   }
   .bannerWrap.banner_1 {
-    padding: 70px 0  30px;
+    padding: 70px 0 30px;
   }
   .bannerContent {
-    padding: 40px 0 0;
+    padding: 40px 0;
+  }
+  .galleryRow {
+    margin: 0 -15px;
+  }
+  .galleryCol {
+    padding: 0 15px;
+  }
+  .galleryWrap .galleryItem {
+    margin-bottom: 30px;
   }
   .bannerWrap .bannerInner .bannerContent .contentInner .roundShapeImg img {
     max-width: 170px;
@@ -127,7 +137,7 @@
   header.header.fixdHeader {
     background: #fff;
     padding: 10px 0;
-    box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   }
   .header.fixdHeader .navbar .hamburger .bar_icon .bar {
     background: #222;

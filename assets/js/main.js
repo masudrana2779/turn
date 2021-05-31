@@ -196,6 +196,16 @@
             });
         }
 
+        if ($('.clientLogoSliderItem').length > 0) {
+            $(".clientLogoSlider").owlCarousel({
+                items: 1,
+                loop: true,
+                nav: false,
+                dots: false,
+                autoplay: true
+            });
+        }
+
 
     });
 }(jQuery);
