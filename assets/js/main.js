@@ -193,6 +193,7 @@
                 loop: true,
                 nav: false,
                 dots: false,
+                autoplay: true
             });
         }
 
