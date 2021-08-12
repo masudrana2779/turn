@@ -137,7 +137,7 @@ ul {
   .header .navbar {
     padding: 0; }
     .header .navbar .logo a img {
-      max-width: 60px;
+      max-width: 80px;
       width: 100%; }
     .header .navbar .hamburger {
       padding: 0;
@@ -207,7 +207,7 @@ ul {
     left: 0; }
   .video_bg #myVideo {
     min-width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     height: auto;
     width: auto;
     max-width: 100%;

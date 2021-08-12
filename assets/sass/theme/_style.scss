@@ -70,7 +70,7 @@
     .logo {
       a {
         img {
-          max-width: 60px;
+          max-width: 80px;
           width: 100%;
         }
       }
@@ -179,7 +179,7 @@
 
   #myVideo {
     min-width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     height: auto;
     width: auto;
     max-width: 100%;
