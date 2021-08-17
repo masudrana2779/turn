@@ -41,6 +41,7 @@
                     circle.appendChild(charElement);
                 });
             }
+
             roundTextContent('.circular-text1');
         }
     });
@@ -58,7 +59,7 @@
         }
 
         headerFixed();
-        $(window).scroll(function (){
+        $(window).scroll(function () {
             headerFixed();
         });
 
@@ -131,7 +132,6 @@
         }
 
 
-
         var windowWidth = $(window).width();
         if (windowWidth > 767) {
             if ($('#pagepiling').length > 0) {
@@ -149,6 +149,7 @@
                         }
                     });
                 }
+
                 allPagepiling();
 
 
@@ -187,6 +188,13 @@
             }
         }
 
+        if (windowWidth < 767) {
+            $("#mainMenu li").on('click', function () {
+                $("#mainMenu li").removeClass("active");
+                $(this).addClass("active");
+
+            });
+        }
         if ($('.carouselItem').length > 0) {
             $(".teamSingleItemWrap").owlCarousel({
                 items: 1,
