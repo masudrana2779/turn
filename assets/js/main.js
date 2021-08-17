@@ -141,7 +141,7 @@
                     $('#pagepiling').pagepiling({
                         menu: '#menu',
                         keyboardScrolling: false,
-                        anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+                        anchors: ['section1', 'section2', 'section3', 'section4', 'section5'],
                         navigation: {
                             'textColor': '#f2f2f2',
                             'bulletsColor': '#ccc',
